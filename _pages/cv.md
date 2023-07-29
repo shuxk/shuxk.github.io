@@ -1,13 +1,9 @@
 ---
-layout: page
+layout: cv
 title: CV 
 permalink: /cv/
 description: 
 nav: true
-horizontal: false
+nav_order: 3
+cv_pdf: CV_Xinkai.pdf
 ---
-
-
-<!-- {% raw %} -->
-<iframe src="../assets/pdf/CV_Xinkai.pdf" width="100%" height="500px"></iframe>
-<!-- {% endraw %}) -->
