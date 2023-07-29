@@ -1,26 +1,33 @@
 @inproceedings{HuangS:STOC:2021,
-  title={Online Stochastic Matching, Poisson Arrivals, and the Natural Linear Program},
-  author={Huang, Zhiyi and Shu, Xinkai},
-  booktitle={Proceedings of the 53rd Annual ACM SIGACT Symposium on Theory of Computing (\textbf{STOC 2021}), Rome, Italy (virtually), June 21-25},
-  pages={682--693},
-  year={2021},
-  selected={true}
+    title={Online Stochastic Matching, Poisson Arrivals, and the Natural Linear Program},
+    author={Huang, Zhiyi and Shu, Xinkai},
+    booktitle={Proceedings of the 53rd Annual ACM SIGACT Symposium on Theory of Computing (<b>STOC 2021</b>), Rome, Italy (virtually), June 21-25},
+    pages={682--693},
+    year={2021},
+    abstract={We study the online stochastic matching problem. Consider a bipartite graph with offline vertices on one side, and with i.i.d.online vertices on the other side. The offline vertices and the distribution of online vertices are known to the algorithm beforehand. The realization of the online vertices, however, is revealed one at a time, upon which the algorithm immediately decides how to match it. For maximizing the cardinality of the matching, we give a $$0.711$$-competitive online algorithm, which improves the best previous ratio of $$0.706$$. When the offline vertices are weighted, we introduce a $$0.7009$$-competitive online algorithm for maximizing the total weight of the matched offline vertices, which improves the best previous ratio of $$0.662$$.
+Conceptually, we find that the analysis of online algorithms simplifies if the online vertices follow a Poisson process, and establish an approximate equivalence between this Poisson arrival model and online stochstic matching. Technically, we propose a natural linear program for the Poisson arrival model, and demonstrate how to exploit its structure by introducing a converse of Jensen's inequality. Moreover, we design an algorithmic amortization to replace the analytic one in previous work, and as a result get the first vertex-weighted online stochastic matching algorithm that improves the results in the weaker random arrival model.},
+    arxiv={2103.13024},
+    selected={true}
 }
 
 @inproceedings{HuangSY:STOC:2022,
     title={The Power of Multiple Choices in Online Stochastic Matching},
     author={Huang, Zhiyi and Shu, Xinkai and Yan, Shuyi},
-    booktitle={Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing (\textbf{STOC 2022}), Rome, Italy, June 20-24},
+    booktitle={Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing (<b>STOC 2022</b>), Rome, Italy, June 20-24},
     pages={91--103},
     year={2022},
+    abstract={We study the power of multiple choices in online stochastic matching. Despite a long line of research, existing algorithms still only consider two choices of offline neighbors for each online vertex because of the technical challenge in analyzing multiple choices. This paper introduces two approaches for designing and analyzing algorithms that use multiple choices. For unweighted and vertex-weighted matching, we adopt the online correlated selection (OCS) technique into the stochastic setting, and improve the competitive ratios to $$0.716$$, from $$0.711$$ and $$0.7$$ respectively. For edge-weighted matching with free disposal, we propose the Top Half Sampling algorithm. We directly characterize the progress of the whole matching instead of individual vertices, through a differential inequality. This improves the competitive ratio to $$0.706$$, breaking the $$1-\frac{1}{e}$$ barrier in this setting for the first time in the literature. Finally, for the harder edge-weighted problem without free disposal, we prove that no algorithms can be $$0.703$$ competitive, separating this setting from the aforementioned three.},
+    arxiv={2203.02883},
     selected={true}
 }
 
 @inproceedings{DuanMSY:FOCS:2023,
     title={A Randomized Algorithm for Single-Source Shortest Path on Undirected Real-Weighted Graphs},
     author={Duan, Ran and Mao, Jiayi and Shu, Xinkai and Yin, Longhui},
-    booktitle={Proceedings of the 64th IEEE Symposium on Foundations of Computer Science (\textbf{FOCS 2023}), Santa Cruz, USA, November 6-9},
+    booktitle={Proceedings of the 64th IEEE Symposium on Foundations of Computer Science (<b>FOCS 2023</b>), Santa Cruz, USA, November 6-9},
     pages={1--1},
     year={2023},
+    abstract={In undirected graphs with real non-negative weights, we give a new randomized algorithm for the single-source shortest path (SSSP) problem with running time $$O(m\sqrt{\log n\cdot\log\log n})$$ in the comparison-addition model. This is the first algorithm to break the O(m+nlogn) time bound for real-weighted sparse graphs by Dijkstra's algorithm with Fibonacci heaps. Previous undirected non-negative SSSP algorithms give time bound of $$O(m\alpha(m,n)+\min\{n\log n,n\log\log r\})$$ in comparison-addition model, where α is the inverse-Ackermann function and r is the ratio of the maximum-to-minimum edge weight [Pettie & Ramachandran 2005], and linear time for integer edge weights in RAM model [Thorup 1999]. Note that there is a proposed complexity lower bound of $$\Omega(m+\min\{n\log n,n\log\log r\})$$ for hierarchy-based algorithms for undirected real-weighted SSSP [Pettie & Ramachandran 2005], but our algorithm does not obey the properties required for that lower bound. As a non-hierarchy-based approach, our algorithm shows great advantage with much simpler structure, and is much easier to implement.},
+    arxiv={2307.04139},
     selected={true}
 }

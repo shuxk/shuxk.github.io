@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My paper <a href="https://arxiv.org/abs/2307.04139">A Randomized Algorithm for Single-Source Shortest Path on Undirected Real-Weighted Graphs
-</a> with Ran Duan, Jiayi Mao & Longhui Yin, was accepted to <b>FOCS 2023</b>.
+My paper with Ran Duan, Jiayi Mao & Longhui Yin, <a href="https://arxiv.org/abs/2307.04139"><i>A Randomized Algorithm for Single-Source Shortest Path on Undirected Real-Weighted Graphs</i></a>, was accepted to <b>FOCS 2023</b>.
