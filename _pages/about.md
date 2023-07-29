@@ -16,3 +16,14 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 I am a fourth-year PhD student in Computer Science at The University of Hong Kong, where I am very fortunate to be advised by <a href='https://i.cs.hku.hk/~zhiyi/'>Prof. Zhiyi Huang</a>. I obtained my bachelor’s degree from <a href='https://iiis.tsinghua.edu.cn/en/yaoclass/'>Yao Class, Tsinghua University</a>. My current research interest is online algorithms and dynamic graph algorithms.
+
+<br>
+<br>
+<br>
+
+<small>
+LG101, Chow Yei Ching Building <br>
+Department of Computer Science <br>
+The University of Hong Kong<br>
+<a href="mailto:xkshu@cs.hku.hk">xkshu@cs.hku.hk</a>
+</small>
