@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://www.cs.hku.hk/'>Department of Computer Science</a>. The University of Hong Kong.
 
