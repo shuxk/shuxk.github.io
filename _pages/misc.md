@@ -13,7 +13,7 @@ I also like mathematical puzzles, e.g. sudoku, kakuro, slitherlink and masyu.
 I'm a casual minesweeper player, with best time at 84s in Expert (3BV=175).
 <div class="row">
     <div class="col-sm-8">
-        {% include figure.html path="assets/img/minesweeper.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/minesweeper.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
