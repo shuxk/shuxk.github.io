@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a fourth-year PhD student in Computer Science at The University of Hong Kong, where I am very fortunate to be advised by <a href='https://i.cs.hku.hk/~zhiyi/'>Prof. Zhiyi Huang</a>. I obtained my bachelor’s degree from <a href='https://iiis.tsinghua.edu.cn/en/yaoclass/'>Yao Class, Tsinghua University</a>. My current research interest is online algorithms and dynamic graph algorithms.
+I am a final-year PhD student in Computer Science at The University of Hong Kong, where I am very fortunate to be advised by <a href='https://i.cs.hku.hk/~zhiyi/'>Prof. Zhiyi Huang</a>. I obtained my bachelor’s degree from <a href='https://iiis.tsinghua.edu.cn/en/yaoclass/'>Yao Class, Tsinghua University</a>. My current research interest is online algorithms and dynamic graph algorithms.
 
 <br>
 <br>
