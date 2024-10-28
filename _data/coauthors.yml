@@ -1,15 +1,15 @@
-"Duan":
+"duan":
   - firstname: ["Ran"]
     url: https://iiis.tsinghua.edu.cn/en/duanr
 
-"Huang":
+"huang":
   - firstname: ["Zhiyi"]
     url: https://i.cs.hku.hk/~zhiyi/
 
-"Li":
+"li":
   - firstname: ["Minming"]
     url: https://www.cs.cityu.edu.hk/~minmli/
 
-"Wei":
+"wei":
   - firstname: ["Tianze"]
     url: https://tianzewei.github.io/
