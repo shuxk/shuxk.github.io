@@ -8,7 +8,7 @@
     - name: Email
       value: <a href="mailto:xkshu@cs.hku.hk">xkshu@cs.hku.hk</a>
     - name: Research Interest
-      value: online algorithms, approximation algorithms, algorithmic game theory, fundamental graph algorithms
+      value: Online algorithms, approximation algorithms, algorithmic game theory, fundamental graph algorithms
 
 - title: Education
   type: time_table
@@ -18,20 +18,20 @@
       year: 2019 - 2024
       description:
         - In Computer Science
-        - Supervised by Prof. <a href="https://i.cs.hku.hk/~zhiyi/">Zhiyi Huang</a>
+        - Supervised by Prof. <a href="https://i.cs.hku.hk/~zhiyi/"><b>Zhiyi Huang</b></a>
     - title: <b>Bachelor of Engineering</b>
       institution: Tsinghua University
       year: 2015 - 2019
       description:
         - In Computer Science and Technology (Yao Class)
-        - Instructed by Prof. <a href="https://iiis.tsinghua.edu.cn/duanr/">Ran Duan</a>
+        - Instructed by Prof. <a href="https://iiis.tsinghua.edu.cn/duanr/"><b>Ran Duan</b></a>
 
 - title: Invited Talks
   type: time_table
   contents:
     - title: A Randomized Algorithm for Single-Source Shortest Path on Undirected Real-Weighted Graphs
       institution: The Hong Kong Polytechnic University
-      year: July 20-21, 2023
+      year: July 21, 2023
       description: CCF Forum for distinguished Ph.D. Candidates in Theoretical Computer Science 2023
     - title: A Randomized Algorithm for Single-Source Shortest Path on Undirected Real-Weighted Graphs
       institution: Shanghai University of Finance and Economics
@@ -39,11 +39,11 @@
       description: Institute for Theoretical Computer Science Seminar 2023
     - title: Online Nash Welfare Maximization Without Predictions
       institution: Shandong University
-      year: April 1-2, 2023
+      year: Apr 1, 2023
       description: Complexity & Algorithms Workshop 2023
     - title: The Power of Multiple Choices in Online Stochastic Matching
       institution: City University of Hong Kong
-      year: August 15-19, 2022
+      year: Aug 18, 2022
       description: International Joint Conference on Theoretical Computer Science – Frontier of Algorithmic Wisdom (IJTCS-FAW) 2022
 
 - title: Additional Information
@@ -52,6 +52,4 @@
     - name: Language
       value: Chinese (Native), English (Fluent), Japanese(Intermediate)
     - name: Programming
-      value: Proficient in C++, Python, PASCAL
-    - name: Puzzle
-      value: I love solving puzzles, especially mathematical puzzles (e.g. sudoku, kakuro, slitherlink and masyu), as well as chess problems, go problems and tsume-shogi
+      value: Proficient in C++, Python, PASCAL, used to be a competitive programmer
