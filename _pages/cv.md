@@ -1,11 +1,11 @@
 ---
 layout: cv
-title: CV 
 permalink: /cv/
-description: 
+title: CV
 nav: true
 nav_order: 3
 cv_pdf: CV_Xinkai.pdf
+description:
+toc:
+sidebar:
 ---
-
-<object data="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" type='application/pdf'/>

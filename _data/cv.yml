@@ -1,0 +1,47 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Name
+      value: Xinkai Shu
+    - name: Email
+      value: xkshu@cs.hku.hk
+    - name: Homepage
+      value: http://shuxk.github.io
+
+- title: Research Interests
+  type: list
+  contents:
+    - Online Algorithms
+    - Approximation Algorithms
+    - Algorithmic Game Theory
+    - Fundamental Graph Algorithms
+
+- title: Education
+  type: time_table
+  contents:
+    - title: <b>Doctor of Philosophy</b>
+      institution: The University of Hong Kong
+      year: 2019 - 2024
+      description:
+        Computer Science
+
+        Advisor: Prof. Zhiyi Huang
+
+        <b>Thesis</b>: Online Matching and Resource Allocation under Stochasticity
+    - title: <b>Bachelor of Engineering</b>
+      institution: Tsinghua University
+      year: 2015 - 2019
+      description:
+        Computer Science and Technology (Yao Class)
+
+        Instructor: Prof. Ran Duan
+
+- title: Additional Information
+  type: map
+  contents:
+    - name: Language
+      value: Chinese (Native), English (Fluent), Japanese(Intermediate)
+    - name: Programming
+      value: Proficient in C++, Python, PASCAL
+    - name: Puzzle
+      value: I love solving puzzles, especially mathematical puzzles (e.g. sudoku, kakuro, slitherlink and masyu), as well as chess problems, go problems and tsume-shogi
