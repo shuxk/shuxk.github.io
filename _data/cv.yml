@@ -1,4 +1,4 @@
-- title: General Information
+- title: 
   type: map
   contents:
     - name: Name
@@ -7,14 +7,8 @@
       value: LG101 Chow Yei Ching Building, The University of Hong Kong
     - name: Email
       value: <a href="mailto:xkshu@cs.hku.hk">xkshu@cs.hku.hk</a>
-
-- title: Research Interests
-  type: list
-  contents:
-    - Online Algorithms
-    - Approximation Algorithms
-    - Algorithmic Game Theory
-    - Fundamental Graph Algorithms
+    - name: Research Interest
+      value: online algorithms, approximation algorithms, algorithmic game theory, fundamental graph algorithms
 
 - title: Education
   type: time_table
@@ -23,13 +17,13 @@
       institution: The University of Hong Kong
       year: 2019 - 2024
       description:
-        - Computer Science
-        - Advised by Prof. <a href="https://i.cs.hku.hk/~zhiyi/">Zhiyi Huang</a>
+        - In Computer Science
+        - Supervised by Prof. <a href="https://i.cs.hku.hk/~zhiyi/">Zhiyi Huang</a>
     - title: <b>Bachelor of Engineering</b>
       institution: Tsinghua University
       year: 2015 - 2019
       description:
-        - Computer Science and Technology (Yao Class)
+        - In Computer Science and Technology (Yao Class)
         - Instructed by Prof. <a href="https://iiis.tsinghua.edu.cn/duanr/">Ran Duan</a>
 
 - title: Invited Talks
@@ -51,23 +45,6 @@
       institution: City University of Hong Kong
       year: August 15-19, 2022
       description: International Joint Conference on Theoretical Computer Science – Frontier of Algorithmic Wisdom (IJTCS-FAW) 2022
-
-- title: Research Visit
-  type: time_table
-  contents:
-    - institution: Shanghai University of Finance and Economics
-      year: March - August 2023
-
-- title: Awards
-  type: time_table
-  contents:
-    - year: 2014
-      items:
-        - <b>Gold medal</b> in China National Olympiad of Informatics
-    - year: 2013
-      items:
-        - <b>Gold medal</b> in China National Olympiad of Informatics
-
 
 - title: Additional Information
   type: map
