@@ -1,115 +1,64 @@
----
----
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{HuangLLS:WINE:2024,
+    title={Online Matching Meets Sampling Without Replacement},
+    author={Huang, Zhiyi and Lee, Chui Shan and Lu, Jianqiao and Shu, Xinkai},
+    booktitle={Proceedings of the 20th Conference on Web and Internet Economics (<b>WINE 2024</b>), Edinburgh, United Kingdom, December 2-5},
+    pages={1--18},
+    year={2024},
+    abstract={Sampling without replacement is a natural online rounding strategy for converting fractional bipartite matching into an integral one. In Online Bipartite Matching, we can use the Balance algorithm to fractionally match each online vertex, and then sample an unmatched offline neighbor with probability proportional to the fractional matching. In Online Stochastic Matching, we can take the solution to a linear program relaxation as a reference, and then match each online vertex to an unmatched offline neighbor with probability proportional to the fractional matching of the online vertex's type. On the one hand, we find empirical evidence that online matching algorithms based on sampling without replacement outperform existing algorithms. On the other hand, the literature offers little theoretical understanding of the power of sampling without replacement in online matching problems.
+    
+    This paper fills the gap in the literature by giving the first non-trivial competitive analyses of sampling without replacement for online matching problems. In Online Stochastic Matching, we develop a potential function analysis framework to show that sampling without replacement is at least \(0.707\)-competitive. The new analysis framework further allows us to derandomize the algorithm to obtain the first polynomial-time deterministic algorithm that breaks the \(1-\frac{1}{e}\)~barrier. In Online Bipartite Matching, we show that sampling without replacement provides provable online correlated selection guarantees when the selection probabilities correspond to the fractional matching chosen by the Balance algorithm. As a result, we prove that sampling without replacement is at least \(0.513\)-competitive for Online Bipartite Matching.
+},
+    arxiv={2410.06868},
+    selected={false}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{HuangLSW:WINE:2023,
+    title={Online Nash Welfare Maximization Without Predictions},
+    author={Huang, Zhiyi and Li, Minming and Shu, Xinkai and Wei, Tianze},
+    booktitle={Proceedings of the 19th Conference on Web and Internet Economics (<b>WINE 2023</b>), Shanghai, China, December 4-8},
+    pages={402--419},
+    year={2023},
+    abstract={The maximization of Nash welfare, which equals the geometric mean of agents' utilities, is widely studied because it balances efficiency and fairness in resource allocation problems. Banerjee, Gkatzelis, Gorokh, and Jin (2022) recently introduced the model of online Nash welfare maximization for \(T\)~divisible items and \(N\)~agents with additive utilities with predictions of each agent's utility for receiving all items. They gave online algorithms whose competitive ratios are logarithmic. We initiate the study of online Nash welfare maximization without predictions, assuming either that the agents' utilities for receiving all items differ by a bounded ratio, or that their utilities for the Nash welfare maximizing allocation differ by a bounded ratio. We design online algorithms whose competitive ratios only depend on the logarithms of the aforementioned ratios of agents' utilities and the number of agents.
+    },
+    arxiv={2211.03077},
+    html={https://link.springer.com/chapter/10.1007/978-3-031-48974-7_23},
+    selected={false}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{DuanMSY:FOCS:2023,
+    title={A Randomized Algorithm for Single-Source Shortest Path on Undirected Real-Weighted Graphs},
+    author={Duan, Ran and Mao, Jiayi and Shu, Xinkai and Yin, Longhui},
+    booktitle={Proceedings of the 64th IEEE Symposium on Foundations of Computer Science (<b>FOCS 2023</b>), Santa Cruz, USA, November 6-9},
+    pages={484--492},
+    year={2023},
+    abstract={In undirected graphs with real non-negative weights, we give a new randomized algorithm for the single-source shortest path (SSSP) problem with running time \(O(m\sqrt\{\log n\cdot\log\log n\})\)~in the comparison-addition model. This is the first algorithm to break the \(O(m+n\log n)\)~time bound for real-weighted sparse graphs by Dijkstra's algorithm with Fibonacci heaps. Previous undirected non-negative SSSP algorithms give time bound of \(O(m\alpha(m,n)+\min\{n\log n,n\log\log r\})\)~in comparison-addition model, where \(\alpha\) is the inverse-Ackermann function and \(r\) is the ratio of the maximum-to-minimum edge weight [Pettie & Ramachandran 2005], and linear time for integer edge weights in RAM model [Thorup 1999]. Note that there is a proposed complexity lower bound of \(\Omega(m+\min\{n\log n,n\log\log r\})\)~for hierarchy-based algorithms for undirected real-weighted SSSP [Pettie & Ramachandran 2005], but our algorithm does not obey the properties required for that lower bound. As a non-hierarchy-based approach, our algorithm shows great advantage with much simpler structure, and is much easier to implement.},
+    arxiv={2307.04139},
+    html={https://ieeexplore.ieee.org/document/10353179},
+    selected={true}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@inproceedings{HuangSY:STOC:2022,
+    title={The Power of Multiple Choices in Online Stochastic Matching},
+    author={Huang, Zhiyi and Shu, Xinkai and Yan, Shuyi},
+    booktitle={Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing (<b>STOC 2022</b>), Rome, Italy, June 20-24},
+    pages={91--103},
+    year={2022},
+    abstract={We study the power of multiple choices in online stochastic matching. Despite a long line of research, existing algorithms still only consider two choices of offline neighbors for each online vertex because of the technical challenge in analyzing multiple choices. This paper introduces two approaches for designing and analyzing algorithms that use multiple choices. For unweighted and vertex-weighted matching, we adopt the online correlated selection (OCS) technique into the stochastic setting, and improve the competitive ratios to \(0.716\), from \(0.711\)~and \(0.7\)~respectively. For edge-weighted matching with free disposal, we propose the Top Half Sampling algorithm. We directly characterize the progress of the whole matching instead of individual vertices, through a differential inequality. This improves the competitive ratio to \(0.706\), breaking the \(1-\frac{1}{e}\)~barrier in this setting for the first time in the literature. Finally, for the harder edge-weighted problem without free disposal, we prove that no algorithms can be \(0.703\)-competitive, separating this setting from the aforementioned three.},
+    arxiv={2203.02883},
+    html={https://dl.acm.org/doi/10.1145/3519935.3520046},
+    selected={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{HuangS:STOC:2021,
+    title={Online Stochastic Matching, Poisson Arrivals, and the Natural Linear Program},
+    author={Huang, Zhiyi and Shu, Xinkai},
+    booktitle={Proceedings of the 53rd Annual ACM SIGACT Symposium on Theory of Computing (<b>STOC 2021</b>), Rome, Italy (virtually), June 21-25},
+    pages={682--693},
+    year={2021},
+    abstract={We study the online stochastic matching problem. Consider a bipartite graph with offline vertices on one side, and with i.i.d.online vertices on the other side. The offline vertices and the distribution of online vertices are known to the algorithm beforehand. The realization of the online vertices, however, is revealed one at a time, upon which the algorithm immediately decides how to match it. For maximizing the cardinality of the matching, we give a \(0.711\)-competitive online algorithm, which improves the best previous ratio of \(0.706\). When the offline vertices are weighted, we introduce a \(0.7009\)-competitive online algorithm for maximizing the total weight of the matched offline vertices, which improves the best previous ratio of \(0.662\).
+    
+    Conceptually, we find that the analysis of online algorithms simplifies if the online vertices follow a Poisson process, and establish an approximate equivalence between this Poisson arrival model and online stochstic matching. Technically, we propose a natural linear program for the Poisson arrival model, and demonstrate how to exploit its structure by introducing a converse of Jensen's inequality. Moreover, we design an algorithmic amortization to replace the analytic one in previous work, and as a result get the first vertex-weighted online stochastic matching algorithm that improves the results in the weaker random arrival model.},
+    arxiv={2103.13024},
+    html={https://dl.acm.org/doi/10.1145/3406325.3451079},
+    selected={true}
 }

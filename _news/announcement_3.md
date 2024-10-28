@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2023-07-05 14:00:00 +0800
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Our paper <a href="https://arxiv.org/abs/2307.04139"><i>A Randomized Algorithm for Single-Source Shortest Path on Undirected Real-Weighted Graphs</i></a> (joint work with Ran Duan, Jiayi Mao & Longhui Yin) has been accepted to <b>FOCS 2023</b>.
