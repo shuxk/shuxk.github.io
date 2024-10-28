@@ -3,10 +3,10 @@
   contents:
     - name: Name
       value: Xinkai Shu
+    - name: Office
+      value: LG101 Chow Yei Ching Building, The University of Hong Kong
     - name: Email
-      value: xkshu@cs.hku.hk
-    - name: Homepage
-      value: http://shuxk.github.io
+      value: <a href="mailto:xkshu@cs.hku.hk">xkshu@cs.hku.hk</a>
 
 - title: Research Interests
   type: list
@@ -24,14 +24,13 @@
       year: 2019 - 2024
       description:
         - Computer Science
-        - Advisor: Prof. Zhiyi Huang
-        - <b>Thesis</b>: Online Matching and Resource Allocation under Stochasticity
+        - Advised by Prof. <a href="https://i.cs.hku.hk/~zhiyi/">Zhiyi Huang</a>
     - title: <b>Bachelor of Engineering</b>
       institution: Tsinghua University
       year: 2015 - 2019
       description:
         - Computer Science and Technology (Yao Class)
-        - Instructor: Prof. Ran Duan
+        - Instructed by Prof. <a href="https://iiis.tsinghua.edu.cn/duanr/">Ran Duan</a>
 
 - title: Invited Talks
   type: time_table
@@ -56,8 +55,7 @@
 - title: Research Visit
   type: time_table
   contents:
-    - title: <b>Doctor of Philosophy</b>
-      institution: Shanghai University of Finance and Economics
+    - institution: Shanghai University of Finance and Economics
       year: March - August 2023
 
 - title: Awards
@@ -65,10 +63,10 @@
   contents:
     - year: 2014
       items:
-        - title: <b>Gold medal</b> in China National Olympiad of Informatics
+        - <b>Gold medal</b> in China National Olympiad of Informatics
     - year: 2013
       items:
-        - title: <b>Gold medal</b> in China National Olympiad of Informatics
+        - <b>Gold medal</b> in China National Olympiad of Informatics
 
 
 - title: Additional Information
