@@ -224,7 +224,6 @@ let determineThemeSetting = () => {
   return themeSetting;
 };
 
-
 let initTheme = () => {
   let themeSetting = determineThemeSetting();
 

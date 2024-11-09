@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have officially obtained my PhD degree at the University of Hong Kong! 
+I have officially obtained my PhD degree at the University of Hong Kong!
