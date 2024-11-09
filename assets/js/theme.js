@@ -215,7 +215,7 @@ let determineSystemThemeSetting = () => {
 };
 
 // Determine the expected state of the theme, which can be "dark" or "light".
-// Default is system theme seeting.
+// Default is system theme setting.
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
   if (themeSetting != "dark" && themeSetting != "light") {
