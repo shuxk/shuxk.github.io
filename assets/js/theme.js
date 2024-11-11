@@ -215,12 +215,18 @@ let determineSystemThemeSetting = () => {
 };
 
 // Determine the expected state of the theme, which can be "dark" or "light".
-// Default is system theme setting.
+// Default is to follow system theme setting.
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
   if (themeSetting != "dark" && themeSetting != "light") {
     themeSetting = determineSystemThemeSetting();
   }
+  return themeSetting;
+};
+
+// Determine the computed theme, which can be "dark" or "light".
+let determineComputedTheme = () => {
+  let themeSetting = determineThemeSetting();
   return themeSetting;
 };
 
@@ -238,7 +244,7 @@ let initTheme = () => {
     });
   });
 
-  // Add event listener to the system theme preference change.
+  // Add event listener to the system theme setting change.
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
     let systemThemeSetting = determineSystemThemeSetting();
     setThemeSetting(systemThemeSetting);
