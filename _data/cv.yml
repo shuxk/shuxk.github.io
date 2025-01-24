@@ -4,11 +4,18 @@
     - name: Name
       value: Xinkai Shu
     - name: Office
-      value: LG101 Chow Yei Ching Building, The University of Hong Kong
+      value: Room 316, Max Planck Institute for Informatics
     - name: Email
-      value: <a href="mailto:xkshu@cs.hku.hk">xkshu@cs.hku.hk</a>
+      value: <a href="mailto:xshu@mpi-inf.mpg.de">xshu@mpi-inf.mpg.de</a>
     - name: Research Interest
-      value: Online algorithms, approximation algorithms, algorithmic game theory, fundamental graph algorithms
+      value: Online algorithms, algorithmic game theory, fundamental graph algorithms
+
+- title: Academic Positions
+  type: time_table
+  contents:
+    - title: <b>Postdoctoral Researcher</b>
+      institution: Max Planck Institute for Informatics
+      year: 2025 - now
 
 - title: Education
   type: time_table
