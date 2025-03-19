@@ -9,10 +9,19 @@ profile:
   image: avatar_small.jpg
   image_circular: false # crops the image to make it circular
   address:
-news: true # includes a list of news items
-latest_posts: false # includes a list of the newest posts
+
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
+  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
 I'm currently a postdoctoral researcher at <a href='https://www.mpi-inf.mpg.de/home'>Max Planck Institute for Informatics</a>. I obtained my PhD degree in Computer Science at The University of Hong Kong, where I was very fortunate to be supervised by Prof. <a href='https://i.cs.hku.hk/~zhiyi/'><b>Zhiyi Huang</b></a>. Before that I obtained my bachelor’s degree from <a href='https://iiis.tsinghua.edu.cn/en/yaoclass/'>Yao Class</a>, Tsinghua University, instructed by Prof. <a href="https://iiis.tsinghua.edu.cn/duanr/"><b>Ran Duan</b></a>. I'm currently interested in online algorithms, algorithmic game theory and fundamental graph algorithms.
