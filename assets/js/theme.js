@@ -1,14 +1,12 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
-// Toggle through light, dark, and system theme settings.
+// Toggle through light and dark theme settings.
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
+  if (themeSetting == "dark") {
     setThemeSetting("light");
-  } else if (themeSetting == "light") {
-    setThemeSetting("dark");
   } else {
-    setThemeSetting("system");
+    setThemeSetting("dark");
   }
 };
 
@@ -23,7 +21,7 @@ let setThemeSetting = (themeSetting) => {
 
 // Apply the computed dark or light theme to the website.
 let applyTheme = () => {
-  let theme = determineComputedTheme();
+  let theme = determineThemeSetting();
 
   transTheme();
   setHighlight(theme);
@@ -205,30 +203,31 @@ let transTheme = () => {
   }, 500);
 };
 
-// Determine the expected state of the theme toggle, which can be "dark", "light", or
-// "system". Default is "system".
+// Determine system theme setting.
+let determineSystemThemeSetting = () => {
+  const userPref = window.matchMedia;
+  if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
+    systemThemeSetting = "dark";
+  } else {
+    systemThemeSetting = "light";
+  }
+  return systemThemeSetting;
+};
+
+// Determine the expected state of the theme, which can be "dark" or "light".
+// Default is to follow system theme setting.
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
-  if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
-    themeSetting = "system";
+  if (themeSetting != "dark" && themeSetting != "light") {
+    themeSetting = determineSystemThemeSetting();
   }
   return themeSetting;
 };
 
-// Determine the computed theme, which can be "dark" or "light". If the theme setting is
-// "system", the computed theme is determined based on the user's system preference.
+// Determine the computed theme, which can be "dark" or "light".
 let determineComputedTheme = () => {
   let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
-    const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    } else {
-      return "light";
-    }
-  } else {
-    return themeSetting;
-  }
+  return themeSetting;
 };
 
 let initTheme = () => {
@@ -245,8 +244,10 @@ let initTheme = () => {
     });
   });
 
-  // Add event listener to the system theme preference change.
+  // Add event listener to the system theme setting change.
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
+    let systemThemeSetting = determineSystemThemeSetting();
+    setThemeSetting(systemThemeSetting);
     applyTheme();
   });
 };
