@@ -454,13 +454,6 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
-        id: 'social-dblp',
-        title: 'DBLP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://dblp.org/pid/289/0097.html", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
@@ -468,11 +461,18 @@ ninja.data = [{
           window.open("mailto:%78%73%68%75@%6D%70%69-%69%6E%66.%6D%70%67.%64%65", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-acm',
+        title: 'ACM DL',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://dl.acm.org/profile/99659735008/", "_blank");
+        },
+      },{
+        id: 'social-dblp',
+        title: 'DBLP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://dblp.org/pid/289/0097.html", "_blank");
         },
       },{
         id: 'social-rss',
@@ -494,13 +494,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.semanticscholar.org/author/2058256821", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
