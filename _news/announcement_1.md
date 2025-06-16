@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper <a href="https://arxiv.org/abs/2103.13024"><b>Online Stochastic Matching, Poisson Arrivals, and the Natural Linear Program</b></a> (joint work with Zhiyi Huang) has been accepted to <b>STOC 2021</b>.
+Our paper <a href="https://arxiv.org/abs/2103.13024"><b>Online Stochastic Matching, Poisson Arrivals, and the Natural Linear Program</b></a> (joint work with Zhiyi Huang) has been accepted to **STOC 2021**.

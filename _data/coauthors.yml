@@ -6,6 +6,10 @@
   - firstname: ["Zhiyi"]
     url: https://i.cs.hku.hk/~zhiyi/
 
+"lee":
+  - firstname: ["Chui Shan"]
+    url: https://tracylcs.github.io/
+
 "li":
   - firstname: ["Minming"]
     url: https://www.cs.cityu.edu.hk/~minmli/
@@ -13,6 +17,10 @@
 "lu":
   - firstname: ["Jianqiao"]
     url: https://jianqiaolu.github.io/
+
+"mao":
+  - firstname: ["Xiao"]
+    url: https://matthew99a.github.io/
 
 "wei":
   - firstname: ["Tianze"]

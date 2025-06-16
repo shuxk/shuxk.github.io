@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper <a href="https://arxiv.org/abs/2410.06868"><b>Online Matching Meets Sampling Without Replacement</b></a> (joint work with Zhiyi Huang, Chui Shan Lee & Jianqiao Lu) has been accepted to <b>WINE 2024</b>.
+Our paper <a href="https://arxiv.org/abs/2410.06868"><b>Online Matching Meets Sampling Without Replacement</b></a> (joint work with Zhiyi Huang, Chui Shan Lee & Jianqiao Lu) has been accepted to **WINE 2024**.

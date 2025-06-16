@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm currently a postdoctoral researcher at <a href='https://www.mpi-inf.mpg.de/home'>Max Planck Institute for Informatics</a>. I obtained my PhD degree in Computer Science at The University of Hong Kong, where I was very fortunate to be supervised by Prof. <a href='https://i.cs.hku.hk/~zhiyi/'><b>Zhiyi Huang</b></a>. Before that I obtained my bachelor’s degree from <a href='https://iiis.tsinghua.edu.cn/en/yaoclass/'>Yao Class</a>, Tsinghua University, instructed by Prof. <a href="https://iiis.tsinghua.edu.cn/duanr/"><b>Ran Duan</b></a>. I'm currently interested in online algorithms, algorithmic game theory and fundamental graph algorithms.
+I'm currently a postdoctoral researcher at <a href='https://www.mpi-inf.mpg.de/home'>Max Planck Institute for Informatics</a>. I obtained my PhD degree in Computer Science at The University of Hong Kong, where I was very fortunate to be supervised by Prof. <a href='https://i.cs.hku.hk/~zhiyi/'>Zhiyi Huang</a>. Before that I obtained my bachelor’s degree from <a href='https://iiis.tsinghua.edu.cn/en/yaoclass/'>Yao Class</a>, Tsinghua University, instructed by Prof. <a href="https://iiis.tsinghua.edu.cn/duanr/">Ran Duan</a>. I'm currently interested in online algorithms, algorithmic game theory and fundamental graph algorithms.
 
 <br>
 <br>
