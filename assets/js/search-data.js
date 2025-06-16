@@ -408,8 +408,8 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-online-matching-meets-sampling-without-replacement-joint-work-with-zhiyi-huang-chui-shan-lee-amp-amp-jianqiao-lu-has-been-accepted-to-wine-2024",
           title: 'Our paper Online Matching Meets Sampling Without Replacement (joint work with Zhiyi Huang,...',
           description: "",
-          section: "News",},{id: "news-our-paper-breaking-the-sorting-barrier-for-directed-single-source-shortest-pathsg-joint-work-with-ran-duan-jiayi-mao-xiao-mao-amp-amp-longhui-yin-has-been-accepted-to-stoc-2025-and-received-the-best-paper-award",
-          title: 'Our paper Breaking the Sorting Barrier for Directed Single-Source Shortest Pathsg (joint work...',
+          section: "News",},{id: "news-our-paper-breaking-the-sorting-barrier-for-directed-single-source-shortest-paths-joint-work-with-ran-duan-jiayi-mao-xiao-mao-amp-amp-longhui-yin-has-been-accepted-to-stoc-2025-and-received-the-best-paper-award",
+          title: 'Our paper Breaking the Sorting Barrier for Directed Single-Source Shortest Paths (joint work...',
           description: "",
           section: "News",},{id: "news-our-paper-the-long-arm-of-nashian-allocation-in-online-p-mean-welfare-maximization-joint-work-with-zhiyi-huang-chui-shan-lee-amp-amp-zhaozi-wang-has-been-accepted-to-icalp-2025",
           title: 'Our paper The Long Arm of Nashian Allocation in Online p-Mean Welfare Maximization...',
@@ -479,6 +479,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://dblp.org/pid/289/0097.html", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0002-5481-6553", "_blank");
         },
       },{
         id: 'social-scholar',
