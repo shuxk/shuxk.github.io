@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-09-17 03:03:00 +0800
+date: 2023-07-11 14:00:00 +0800
 inline: true
 related_posts: false
 ---
 
-Our paper <a href="https://arxiv.org/abs/2410.06868"><b>Online Matching Meets Sampling Without Replacement</b></a> (joint work with Zhiyi Huang, Chui Shan Lee & Jianqiao Lu) has been accepted to **WINE 2024**.
+I gave a talk on <b>A Randomized Algorithm for Single-Source Shortest Path on Undirected Real-Weighted Graphs</b> at <a href="https://itcs.sufe.edu.cn/19/29/c10453a203049/page.htm"><b>ITCS seminar</b></a>.

@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-09-08 20:27:00 +0800
+date: 2023-04-01 15:00:00 +0800
 inline: true
 related_posts: false
 ---
 
-Our paper <a href="https://arxiv.org/abs/2211.03077"><b>Online Nash Welfare Maximization Without Predictions</b></a> (joint work with Zhiyi Huang, Minming Li & Tianze Wei) has been accepted to **WINE 2023**.
+I gave a talk on <b>Online Nash Welfare Maximization Without Predictions</b> at **C&A 2023**.

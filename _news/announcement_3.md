@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-03-01 08:00:00 +0800
+date: 2022-08-18 20:00:00 +0800
 inline: true
 related_posts: false
 ---
 
-I'm visiting Institute for Theoretical Computer Science, Shanghai University of Finance and Economics for six months until August 31, 2023.
+I gave a talk on <b>The Power of Multiple Choices in Online Stochastic Matching</b> at **IJTCS-FAW 2022**.

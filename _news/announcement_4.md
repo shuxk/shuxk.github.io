@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-07-05 14:00:00 +0800
+date: 2023-03-01 08:00:00 +0800
 inline: true
 related_posts: false
 ---
 
-Our paper <a href="https://arxiv.org/abs/2307.04139"><b>A Randomized Algorithm for Single-Source Shortest Path on Undirected Real-Weighted Graphs</b></a> (joint work with Ran Duan, Jiayi Mao & Longhui Yin) has been accepted to **FOCS 2023**.
+I'm visiting <a href="https://itcs.sufe.edu.cn/"><b>Institute for Theoretical Computer Science, Shanghai University of Finance and Economics</b></a> for six months, until August 31, 2023.
