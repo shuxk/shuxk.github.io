@@ -36,6 +36,10 @@
 - title: Invited Talks
   type: time_table
   contents:
+    - title: Breaking the Sorting Barrier for Directed Single-Source Shortest Paths
+      institution: Sorbonne University
+      year: July 2, 2025
+      description: International Joint Conference on Theoretical Computer Science – Frontier of Algorithmic Wisdom (IJTCS-FAW) 2025
     - title: A Randomized Algorithm for Single-Source Shortest Path on Undirected Real-Weighted Graphs
       institution: The Hong Kong Polytechnic University
       year: July 21, 2023
@@ -46,11 +50,11 @@
       description: Institute for Theoretical Computer Science Seminar 2023
     - title: Online Nash Welfare Maximization Without Predictions
       institution: Shandong University
-      year: Apr 1, 2023
+      year: April 1, 2023
       description: Complexity & Algorithms Workshop 2023
     - title: The Power of Multiple Choices in Online Stochastic Matching
       institution: City University of Hong Kong
-      year: Aug 18, 2022
+      year: August 18, 2022
       description: International Joint Conference on Theoretical Computer Science – Frontier of Algorithmic Wisdom (IJTCS-FAW) 2022
 
 - title: Additional Information
