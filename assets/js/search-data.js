@@ -486,13 +486,6 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%78%73%68%75@%6D%70%69-%69%6E%66.%6D%70%67.%64%65", "_blank");
-        },
-      },{
         id: 'social-acm',
         title: 'ACM DL',
         section: 'Socials',
@@ -505,6 +498,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://dblp.org/pid/289/0097.html", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%78%73%68%75@%6D%70%69-%69%6E%66.%6D%70%67.%64%65", "_blank");
         },
       },{
         id: 'social-orcid',
