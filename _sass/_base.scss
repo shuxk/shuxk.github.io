@@ -895,7 +895,6 @@ footer.sticky-bottom {
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;
-}
 
   // Responsive code block container
   overflow-x: auto;
@@ -908,6 +907,7 @@ figure.highlight {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+}
 
 pre {
   color: var(--global-theme-color);

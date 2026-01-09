@@ -112,7 +112,7 @@ GEM
       nokogiri (>= 1.4)
     htmlcompressor (0.4.0)
     http_parser.rb (0.8.1)
-    httparty (0.24.1)
+    httparty (0.24.0)
       csv
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
@@ -314,4 +314,4 @@ DEPENDENCIES
   ostruct
 
 BUNDLED WITH
-   4.0.3
+  4.0.3
