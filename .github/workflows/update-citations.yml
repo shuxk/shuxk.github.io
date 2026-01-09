@@ -3,8 +3,6 @@ name: Update Google Scholar Citations
 on:
   schedule:
     - cron: "0 0 * * 1" # Monday
-    - cron: "0 0 * * 3" # Wednesday
-    - cron: "0 0 * * 5" # Friday
   workflow_dispatch:
 
 jobs:
@@ -15,8 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       # See CUSTOMIZE.md for details on how to set up PAT for triggering subsequent workflows
-      #        with:
-      #          token: ${{ secrets.PAT }}
+        with:
+          token: ${{ secrets.PAT }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
