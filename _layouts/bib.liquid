@@ -260,29 +260,27 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
-    </div>
-    {% if site.enable_publication_badges %}
-      {% assign entry_has_altmetric_badge = false %}
-      {% if entry.altmetric and entry.altmetric != 'false' %}
-        {% assign entry_has_altmetric_badge = true %}
-      {% endif %}
+      {% if site.enable_publication_badges %}
+        {% assign entry_has_altmetric_badge = false %}
+        {% if entry.altmetric and entry.altmetric != 'false' %}
+          {% assign entry_has_altmetric_badge = true %}
+        {% endif %}
 
-      {% assign entry_has_dimensions_badge = false %}
-      {% if entry.dimensions and entry.dimensions != 'false' %}
-        {% assign entry_has_dimensions_badge = true %}
-      {% endif %}
+        {% assign entry_has_dimensions_badge = false %}
+        {% if entry.dimensions and entry.dimensions != 'false' %}
+          {% assign entry_has_dimensions_badge = true %}
+        {% endif %}
 
-      {% assign entry_has_google_scholar_badge = false %}
-      {% if entry.google_scholar_id %}
-        {% assign entry_has_google_scholar_badge = true %}
-      {% endif %}
+        {% assign entry_has_google_scholar_badge = false %}
+        {% if entry.google_scholar_id %}
+          {% assign entry_has_google_scholar_badge = true %}
+        {% endif %}
 
-      {% assign entry_has_inspirehep_badge = false %}
-      {% if entry.inspirehep_id %}
-        {% assign entry_has_inspirehep_badge = true %}
-      {% endif %}
-      {% if entry_has_altmetric_badge or entry_has_dimensions_badge or entry_has_google_scholar_badge or entry_has_inspirehep_badge %}
-        <div class="badges">
+        {% assign entry_has_inspirehep_badge = false %}
+        {% if entry.inspirehep_id %}
+          {% assign entry_has_inspirehep_badge = true %}
+        {% endif %}
+        {% if entry_has_altmetric_badge or entry_has_dimensions_badge or entry_has_google_scholar_badge or entry_has_inspirehep_badge %}
           {% if site.enable_publication_badges.altmetric and entry_has_altmetric_badge %}
             <span
               class="altmetric-embed"
@@ -360,9 +358,9 @@
               >
             </a>
           {% endif %}
-        </div>
+        {% endif %}
       {% endif %}
-    {% endif %}
+    </div>
 
     {% if entry.award %}
       <!-- Hidden Award block -->
