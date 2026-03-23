@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-03-16'
+  last_updated: '2026-03-23'
 papers:
   soUA8MYAAAAJ:2osOgNQ5qMEC:
     citations: 1
     title: Online matching meets sampling without replacement
     year: '2024'
   soUA8MYAAAAJ:9yKSN-GCB0IC:
-    citations: 54
+    citations: 55
     title: The power of multiple choices in online stochastic matching
     year: '2022'
   soUA8MYAAAAJ:IjCSPb-OGe4C:
@@ -30,6 +30,6 @@ papers:
     title: Online nash welfare maximization without predictions
     year: '2023'
   soUA8MYAAAAJ:u5HHmVD_uO8C:
-    citations: 64
+    citations: 65
     title: Online stochastic matching, poisson arrivals, and the natural linear program
     year: '2021'
