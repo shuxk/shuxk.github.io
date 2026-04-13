@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-30'
+  last_updated: '2026-04-13'
 papers:
   soUA8MYAAAAJ:2osOgNQ5qMEC:
     citations: 1
@@ -22,7 +22,7 @@ papers:
     title: A randomized algorithm for single-source shortest path on undirected real-weighted graphs
     year: '2023'
   soUA8MYAAAAJ:qjMakFHDy7sC:
-    citations: 33
+    citations: 35
     title: Breaking the sorting barrier for directed single-source shortest paths
     year: '2025'
   soUA8MYAAAAJ:u-x6o8ySG0sC:
