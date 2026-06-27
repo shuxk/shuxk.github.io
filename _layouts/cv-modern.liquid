@@ -1,0 +1,172 @@
+---
+layout: default
+---
+{% assign cv = site.data.cv.cv %}
+
+<div class="cv-modern">
+  {% if cv %}
+    <section class="cv-hero">
+      {% if page.cv_pdf %}
+        <a
+          href="{{ page.cv_pdf | prepend: '/' | relative_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cv-pdf-link"
+          aria-label="Download CV PDF"
+          title="Download CV PDF"
+        >
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      {% endif %}
+
+      <p class="cv-hero-subtitle">
+        Postdoctoral Researcher<br>
+        Max Planck Institute for Informatics
+      </p>
+    </section>
+
+    {% assign entries = cv.sections['Research Interests'] %}
+    {% if entries %}
+      <h3>Research Interests</h3>
+      <div class="cv-entry-list">
+        {% for entry in entries %}
+          {% if entry.keywords %}
+            <div class="cv-entry">
+              <div class="cv-entry-details">{{ entry.keywords }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% assign entries = cv.sections['Academic Positions'] %}
+    {% if entries %}
+      <h3 id="academic-positions">Academic Positions</h3>
+      <div class="cv-entry-list">
+        {% for entry in entries %}
+          <article class="cv-entry">
+            <div class="cv-entry-main">
+              <div>
+                <div class="cv-entry-title">{{ entry.position }}</div>
+                <div class="cv-entry-details">{{ entry.institution | default: entry.name }}</div>
+              </div>
+              <div class="cv-entry-date">
+                {% assign start_year = entry.start_date | split: '-' | first %}
+                {% assign end_year = entry.end_date | split: '-' | first %}
+                {{ start_year -}}
+                {%- if entry.end_date %} - {{ end_year }}{% else %} - Present{% endif %}
+              </div>
+            </div>
+            {% if entry.details %}
+              <p class="cv-entry-details">{{ entry.details }}</p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% assign entries = cv.sections.Education %}
+    {% if entries %}
+      <h3 id="education">Education</h3>
+      <div class="cv-entry-list">
+        {% for entry in entries %}
+          <article class="cv-entry">
+            <div class="cv-entry-main">
+              <div>
+                <div class="cv-entry-title">
+                  {{ entry.studyType | default: entry.degree }}
+                  {% if entry.area %}
+                    <span class="cv-entry-title-detail">in {{ entry.area }}</span>
+                  {% endif %}
+                </div>
+                <div class="cv-entry-details">{{ entry.institution }}</div>
+              </div>
+              <div class="cv-entry-date">
+                {% assign start_year = entry.start_date | split: '-' | first %}
+                {% assign end_year = entry.end_date | split: '-' | first %}
+                {{ start_year -}}
+                {%- if entry.end_date %} - {{ end_year }}{% endif %}
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% assign entries = cv.sections.Awards %}
+    {% if entries %}
+      <h3 id="awards">Awards</h3>
+      <div class="cv-entry-list">
+        {% for entry in entries %}
+          <article class="cv-entry">
+            <div class="cv-entry-main">
+              <div>
+                <div class="cv-entry-title">{{ entry.title }}</div>
+                {% if entry.venue %}
+                  <div class="cv-entry-details">{{ entry.venue }}</div>
+                {% endif %}
+              </div>
+              {% if entry.date %}
+                <div class="cv-entry-date">{{ entry.date | split: '-' | first }}</div>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% assign entries = cv.sections['Invited Talks'] %}
+    {% if entries %}
+      <h3 id="invited-talks">Invited Talks</h3>
+      <div class="cv-entry-list">
+        {% for entry in entries %}
+          <article class="cv-entry">
+            <div class="cv-entry-title">{{ entry.title }}</div>
+            <div class="cv-entry-list-compact">
+              {% for venue in entry.venues %}
+                <div class="cv-entry-subrow">
+                  <span class="cv-entry-details">{{ venue.name }}</span>
+                  {% if venue.date %}
+                    <span class="cv-entry-date">{{ venue.date | date: '%b %Y' }}</span>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% assign entries = cv.sections['Academic Services'] %}
+    {% if entries %}
+      <h3 id="academic-services">Academic Services</h3>
+      <div class="cv-entry-list">
+        {% for entry in entries %}
+          <article class="cv-entry">
+            <div class="cv-entry-title">{{ entry.role | default: entry.name | default: entry.label }}</div>
+            {% if entry.details %}
+              <div class="cv-entry-details">{{ entry.details }}</div>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% assign entries = cv.sections['Additional Information'] %}
+    {% if entries %}
+      <h3 id="additional-information">Additional Information</h3>
+      <div class="cv-entry-list">
+        {% for entry in entries %}
+          <article class="cv-entry">
+            <div class="cv-entry-title">{{ entry.label }}</div>
+            {% if entry.details %}
+              <div class="cv-entry-details">{{ entry.details }}</div>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% else %}
+    <p>No CV data found. Please configure <code>_data/cv.yml</code>.</p>
+  {% endif %}
+</div>
