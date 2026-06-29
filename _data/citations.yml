@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-06-15'
+  last_updated: '2026-06-29'
 papers:
   soUA8MYAAAAJ:2osOgNQ5qMEC:
     citations: 1
     title: Online matching meets sampling without replacement
     year: '2024'
   soUA8MYAAAAJ:9yKSN-GCB0IC:
-    citations: 56
+    citations: 57
     title: The power of multiple choices in online stochastic matching
     year: '2022'
   soUA8MYAAAAJ:IjCSPb-OGe4C:
@@ -14,7 +14,7 @@ papers:
     title: A Faster Directed Single-Source Shortest Path Algorithm
     year: '2026'
   soUA8MYAAAAJ:UeHWp8X0CEIC:
-    citations: 4
+    citations: 5
     title: The Long Arm of Nashian Allocation in Online -Mean Welfare Maximization
     year: '2025'
   soUA8MYAAAAJ:d1gkVwhDpl0C:
@@ -26,10 +26,10 @@ papers:
     title: Breaking the sorting barrier for directed single-source shortest paths
     year: '2025'
   soUA8MYAAAAJ:u-x6o8ySG0sC:
-    citations: 11
+    citations: 12
     title: Online nash welfare maximization without predictions
     year: '2023'
   soUA8MYAAAAJ:u5HHmVD_uO8C:
-    citations: 67
+    citations: 68
     title: Online stochastic matching, poisson arrivals, and the natural linear program
     year: '2021'
