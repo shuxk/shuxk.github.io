@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-09-17 03:03:00 +0800
+date: 2024-08-23 17:00:00 +0800
 inline: true
 related_posts: false
 ---
 
-Our paper <a href="https://arxiv.org/abs/2410.06868"><b>Online Matching Meets Sampling Without Replacement</b></a> (joint work with Zhiyi Huang, Chui Shan Lee, and Jianqiao Lu) was accepted to **WINE 2024**.
+I joined the Max Planck Institute for Informatics as a postdoctoral researcher, hosted by Danupon Nanongkai.

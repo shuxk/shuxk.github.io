@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-01-20 17:00:00 +0800
+date: 2024-09-17 03:03:00 +0800
 inline: true
 related_posts: false
 ---
 
-I joined the Max Planck Institute for Informatics as a postdoctoral researcher, hosted by Danupon Nanongkai.
+Our paper <a href="https://arxiv.org/abs/2410.06868"><b>Online Matching Meets Sampling Without Replacement</b></a> (joint work with Zhiyi Huang, Chui Shan Lee, and Jianqiao Lu) was accepted to **WINE 2024**.
