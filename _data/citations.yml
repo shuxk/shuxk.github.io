@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-29'
+  last_updated: '2026-07-13'
 papers:
   soUA8MYAAAAJ:2osOgNQ5qMEC:
     citations: 1
@@ -18,11 +18,11 @@ papers:
     title: The Long Arm of Nashian Allocation in Online -Mean Welfare Maximization
     year: '2025'
   soUA8MYAAAAJ:d1gkVwhDpl0C:
-    citations: 21
+    citations: 22
     title: A randomized algorithm for single-source shortest path on undirected real-weighted graphs
     year: '2023'
   soUA8MYAAAAJ:qjMakFHDy7sC:
-    citations: 44
+    citations: 49
     title: Breaking the sorting barrier for directed single-source shortest paths
     year: '2025'
   soUA8MYAAAAJ:u-x6o8ySG0sC:
