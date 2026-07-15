@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://www.mpi-inf.mpg.de/home'>Max Planck Institute for Informatics</a>, Saarbrücken, Germany.
+subtitle: <a href='https://www.mpi-inf.mpg.de/home'>Max Planck Institute for Informatics</a>, Saarbrücken, Germany
 
 profile:
   align: right
@@ -32,5 +32,6 @@ My research mainly focuses on <b>online algorithms beyond worst-case analysis</b
 
 <small>
 Email: varepsilonshu [at] gmail [dot] com (Primary), xshu [at] mpi [hyphen] inf [dot] mpg [dot] de (Expire soon)
+
 Office: Room 316, Max Planck Institute for Informatics
 </small>

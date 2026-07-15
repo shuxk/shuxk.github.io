@@ -7,12 +7,12 @@ nav: true
 nav_order: 4
 ---
 
-I enjoy chess puzzles, go problems, and tsume-shogi, mainly as puzzles; my over-the-board play is much more modest.
+I enjoy chess puzzles, Go problems, and <em>tsume-shogi</em>, mainly as puzzles; my over-the-board play is much more modest.
 
 <details class="puzzle-games-disclosure">
-  <summary>I also like mathematical puzzles such as <span>sudoku</span>, kakuro, slitherlink, and masyu.</summary>
+  <summary>I also like pencil-and-paper puzzles such as <span>Sudoku</span>, Kakuro, Slitherlink, and Masyu.</summary>
 
-  <p>I constructed my first original sudoku variant puzzle. I’d love to hear your feedback.</p>
+  Below is my first original Sudoku variant puzzle. Love to hear your feedback!
 
   <div class="sudoku">
     <div class="title">Arithmetic Thermometers (<a href="https://sudokupad.app/7qduimvfmr">SudokuPad</a>)</div>
@@ -23,13 +23,13 @@ I enjoy chess puzzles, go problems, and tsume-shogi, mainly as puzzles; my over-
       {% include figure.liquid path="assets/img/arithmetic_thermometer.png" title="Arithmetic Thermometers" class="img-fluid rounded z-depth-1" %}
     </div>
 
-    <p>Normal sudoku rules apply.</p>
+    Normal sudoku rules apply.
 
-    <p>On each thermometer, the digits from the bulb to the tip form a <b>strictly increasing arithmetic progression</b>. Each thermometer may have its own common difference.</p>
+    On each thermometer, the digits from the bulb to the tip form a <b>strictly increasing arithmetic progression</b>. Each thermometer may have its own common difference.
 
-    <p>If thermometers share a cell, each thermometer is read independently in its own bulb-to-tip direction.</p>
+    If thermometers share a cell, each thermometer is read independently in its own bulb-to-tip direction.
 
-    <p><br></p>
+    <br>
 
     <details>
       <summary>Bonus: after solving the grid, can you find the <b>hidden loop</b>?</summary>
@@ -45,7 +45,7 @@ I enjoy chess puzzles, go problems, and tsume-shogi, mainly as puzzles; my over-
 <details class="puzzle-games-disclosure">
   <summary><span>Logic puzzle games</span> are another favorite, especially those built around simple rules and surprising consequences.</summary>
 
-  <p>Here are a few that I particularly enjoy.</p>
+  Here are a few that I particularly enjoy.
 
   <div class="steam-game-grid">
     {% for game in site.data.puzzle_games %}
@@ -55,6 +55,8 @@ I enjoy chess puzzles, go problems, and tsume-shogi, mainly as puzzles; my over-
     {% endfor %}
   </div>
 </details>
+
+I solve problems on <a href="https://projecteuler.net/">Project Euler</a>, which require a mix of mathematics and algorithmic thinking.
 
 I play Minesweeper casually. My Expert PB is 84 seconds on a board with 3BV=175.
 
