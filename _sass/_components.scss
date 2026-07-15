@@ -550,6 +550,10 @@ ul.task-list input[type="checkbox"] {
   border-bottom-style: solid;
 }
 
+.puzzle-games-disclosure[open] > summary + * {
+    margin-top: 1em;
+}
+
 .sudoku {
   margin-bottom: 0.25em;
   padding: 0.5rem 0.5rem;
