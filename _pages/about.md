@@ -30,6 +30,7 @@ I obtained my PhD degree in Computer Science from The University of Hong Kong, w
 
 My research mainly focuses on <b>online algorithms beyond worst-case analysis</b>, including algorithms with predictions and stochastic input models. Much of my work studies matching, selection, and resource allocation problems arising in online decision making. I also work on fast algorithms for fundamental graph problems, especially shortest paths.
 
-<small>Email: varepsilonshu [at] gmail [dot] com (Primary), xshu [at] mpi [hyphen] inf [dot] mpg [dot] de (Expire soon)</small>
-
-<small>Office: Room 316, Max Planck Institute for Informatics</small>
+<div class="small-text">
+  <p>Email: varepsilonshu [at] gmail [dot] com (Primary), xshu [at] mpi [hyphen] inf [dot] mpg [dot] de (Expire soon)</p>
+  <p>Office: Room 316, Max Planck Institute for Informatics</p>
+</div>
