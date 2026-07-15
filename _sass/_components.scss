@@ -554,6 +554,23 @@ ul.task-list input[type="checkbox"] {
   margin-top: 1em;
 }
 
+.hidden-loop-disclosure summary {
+  cursor: pointer;
+}
+
+.hidden-loop-disclosure summary span {
+  color: var(--global-theme-color);
+  border-bottom: 1px dashed var(--global-theme-color);
+}
+
+.hidden-loop-disclosure summary:hover span {
+  border-bottom-style: solid;
+}
+
+.hidden-loop-disclosure[open] > summary + * {
+  margin-top: 1em;
+}
+
 .sudoku {
   margin-bottom: 0.25em;
   padding: 0.5rem 0.5rem;

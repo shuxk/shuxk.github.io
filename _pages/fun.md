@@ -29,8 +29,8 @@ I enjoy chess puzzles, Go problems, and <em>tsume-shogi</em>, mainly as puzzles;
 
     <p><br></p>
 
-    <details>
-      <summary>Bonus: after solving the grid, can you find the <b>hidden loop</b>?</summary>
+    <details class="hidden-loop-disclosure">
+      <summary>Bonus: after solving the grid, can you find the <span>hidden loop</span>?</summary>
       <div class="easter-egg-content">
          The thermometers connect tip-to-bulb to form a single 80-cell closed loop around the central cell. Along the loop, every tip, bulb, and non-thermometer cell is a turn; the loop may not pass straight through any of these cells.
       </div>
