@@ -30,7 +30,7 @@ I enjoy chess puzzles, Go problems, and <em>tsume-shogi</em>, mainly as puzzles;
     <p><br></p>
 
     <details class="hidden-loop-disclosure">
-      <summary>Bonus: after solving the grid, can you find the <span>hidden loop</span>?</summary>
+      <summary><b>Bonus:</b> After solving the grid, can you find the <span>hidden loop</span>?</summary>
       <div class="easter-egg-content">
          The thermometers connect tip-to-bulb to form a single 80-cell closed loop around the central cell. Along the loop, every tip, bulb, and non-thermometer cell is a turn; the loop may not pass straight through any of these cells.
       </div>
@@ -54,7 +54,7 @@ I enjoy chess puzzles, Go problems, and <em>tsume-shogi</em>, mainly as puzzles;
   </div>
 </details>
 
-I solve problems on <a href="https://projecteuler.net/">Project Euler</a>, which require a mix of mathematics and algorithmic thinking.
+I solve problems on <a href="https://projecteuler.net/">Project Euler</a>. My favorite problems are those where the underlying mathematical structure leads naturally to an efficient algorithm.
 
 I play Minesweeper casually. My Expert PB is 84 seconds on a board with 3BV=175.
 
