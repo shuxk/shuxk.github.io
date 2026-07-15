@@ -522,13 +522,14 @@ ul.task-list input[type="checkbox"] {
 // Fun
 
 .puzzle-games-disclosure {
-  margin: 0 0 1.4rem;
+  margin: 0;
 }
 
 .puzzle-games-disclosure summary {
   display: inline;
   cursor: pointer;
   list-style: none;
+  margin: 0;
 }
 
 .puzzle-games-disclosure summary::marker {
@@ -547,10 +548,6 @@ ul.task-list input[type="checkbox"] {
 
 .puzzle-games-disclosure summary:hover span {
   border-bottom-style: solid;
-}
-
-.puzzle-games-disclosure p {
-  margin-top: 1.1rem;
 }
 
 .sudoku {
