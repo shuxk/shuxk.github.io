@@ -27,7 +27,6 @@ I enjoy chess puzzles, Go problems, and <em>tsume-shogi</em>, mainly as puzzles;
 
     <p>On each thermometer, the digits from the bulb to the tip form a <b>strictly increasing arithmetic progression</b>. Each thermometer may have its own common difference.</p>
 
-    <p>If thermometers share a cell, each thermometer is read independently in its own bulb-to-tip direction.<.p>
 
     <p><br></p>
 
