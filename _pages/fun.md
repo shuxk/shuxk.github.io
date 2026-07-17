@@ -12,7 +12,7 @@ I enjoy chess puzzles, Go problems, and <em>tsume-shogi</em>, mainly as puzzles;
 <details class="puzzle-games-disclosure">
   <summary>I also like pencil-and-paper puzzles such as <span>Sudoku</span>, Kakuro, Slitherlink, and Masyu.</summary>
 
-  <p>Below is my first original Sudoku variant puzzle. Love to hear your feedback!</p>
+  <p>Below is my first original Sudoku variant puzzle. I'd love to hear your feedback.</p>
 
   <div class="sudoku">
     <div class="title">Arithmetic Thermometers (<a href="https://sudokupad.app/7qduimvfmr">SudokuPad</a>)</div>
