@@ -26,7 +26,7 @@ latest_posts:
 
 I am currently a postdoctoral researcher at the <a href='https://www.mpi-inf.mpg.de/home'>Max Planck Institute for Informatics</a>, hosted by <a href='https://www.mpi-inf.mpg.de/departments/algorithms-complexity/people/current-members/danupon-na-nongkai'>Danupon Nanongkai</a>. I will be leaving the institute by <b>July 29th</b>, and I want to thank everyone here for a truly wonderful experience!
 
-I obtained my PhD degree in Computer Science from The University of Hong Kong, where I was very fortunate to be supervised by <a href='https://i.cs.hku.hk/~zhiyi/'>Zhiyi Huang</a>. Before that, I obtained my bachelor’s degree from <a href='https://iiis.tsinghua.edu.cn/en/yaoclass/'>Yao Class</a>, Tsinghua University.
+I obtained my PhD degree in Computer Science from The University of Hong Kong, where I was very fortunate to be supervised by <a href='https://i.cs.hku.hk/~zhiyi/'>Zhiyi Huang</a>. Before that, I obtained my bachelor’s degree from <a href='https://iiis.tsinghua.edu.cn/en/Yao_Class/About_Yao_Class.htm'>Yao Class</a>, Tsinghua University.
 
 My research mainly focuses on <b>online algorithms beyond worst-case analysis</b>, including algorithms with predictions and stochastic input models. Much of my work studies matching, selection, and resource allocation problems arising in online decision making. I also work on fast algorithms for fundamental graph problems, especially shortest paths.
 
