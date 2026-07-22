@@ -355,8 +355,13 @@ ul.task-list input[type="checkbox"] {
 .publications ol.bibliography li .links {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.4rem;
   margin-top: 0.5rem;
+}
+
+.publications ol.bibliography li .links a img {
+  display: block;
 }
 
 .publications ol.bibliography li .links a.btn {

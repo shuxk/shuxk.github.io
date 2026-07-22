@@ -121,6 +121,16 @@ html[data-theme="dark"] {
   }
 }
 
+html[data-theme="dark"] .bibsearch-form-input {
+  color: var(--global-text-color);
+  background: var(--global-card-bg-color);
+  border-color: var(--global-divider-color);
+}
+
+html[data-theme="dark"] .bibsearch-form-input:focus {
+  border-color: var(--global-theme-color);
+}
+
 html[data-theme-setting="dark"] {
   #light-toggle-system {
     display: none;
