@@ -53,7 +53,7 @@ layout: default
                 {% assign start_year = entry.start_date | split: '-' | first %}
                 {% assign end_year = entry.end_date | split: '-' | first %}
                 {{ start_year -}}
-                {%- if entry.end_date %} - {{ end_year }}{% else %} - Present{% endif %}
+                {%- if entry.end_date %}–{{ end_year }}{% else %}–Present{% endif %}
               </div>
             </div>
             {% if entry.details %}
@@ -84,7 +84,7 @@ layout: default
                 {% assign start_year = entry.start_date | split: '-' | first %}
                 {% assign end_year = entry.end_date | split: '-' | first %}
                 {{ start_year -}}
-                {%- if entry.end_date %} - {{ end_year }}{% endif %}
+                {%- if entry.end_date %}–{{ end_year }}{% endif %}
               </div>
             </div>
           </article>
