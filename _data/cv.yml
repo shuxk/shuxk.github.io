@@ -1,18 +1,14 @@
 cv:
-  name: Xinkai Shu
-  email: xshu@mpi-inf.mpg.de
-  website: https://shuxk.github.io
-
   sections:
     Research Interests:
-      - keywords: Online algorithms, approximation algorithms, fundamental graph algorithms
+      - keywords: Online algorithms, approximation algorithms, shortest path algorithms
 
     Academic Positions:
       - institution: Max Planck Institute for Informatics
         position: Postdoctoral Researcher
         location: Saarbrücken, Germany
         start_date: 2024-08
-        end_date: present
+        end_date: 2026-07
 
     Education:
       - institution: The University of Hong Kong
@@ -65,6 +61,6 @@ cv:
 
     Additional Information:
       - label: Language
-        details: Chinese (Native), English (Fluent), Japanese (Intermediate)
+        details: Chinese (Native), English (Fluent), Japanese (Intermediate), German (Basic)
       - label: Programming
         details: C++, Python, Pascal; former competitive programmer
