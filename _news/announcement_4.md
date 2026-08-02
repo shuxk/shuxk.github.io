@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'm visiting <a href="https://itcs.sufe.edu.cn/"><b>Institute for Theoretical Computer Science, Shanghai University of Finance and Economics</b></a> for six months, until August 31, 2023.
+I started a six-month visit to the <a href="https://itcs.sufe.edu.cn/"><b>Institute for Theoretical Computer Science, Shanghai University of Finance and Economics</b></a>, ending on August 31, 2023.

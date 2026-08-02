@@ -53,14 +53,14 @@ cv:
         date: 2025-06-24
         venue: 57th Annual ACM Symposium on Theory of Computing (STOC)
 
-    Academic Services:
+    Academic Service:
       - role: Journal Reviewer
         details: Acta Informatica
       - role: Conference Reviewer
         details: ESA 2026, FOCS 2026, STOC 2026, SODA 2026, WAOA 2025, APPROX 2025, ICML 2025, STOC 2025, SODA 2025, ICALP 2024, SODA 2024, ICALP 2023, ISSAC 2023, SODA 2023, STOC 2022
 
     Additional Information:
-      - label: Language
+      - label: Languages
         details: Chinese (native), English (fluent), Japanese (intermediate), German (basic)
       - label: Programming
         details: C++, Python, Pascal; former competitive programmer

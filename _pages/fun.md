@@ -7,7 +7,7 @@ nav: true
 nav_order: 4
 ---
 
-I enjoy chess puzzles, Go problems, and <em>tsume-shogi</em>, mainly as puzzles; my over-the-board play is much more modest.
+I enjoy solving chess puzzles, Go problems, and <em>tsume-shogi</em>; my over-the-board play is much more modest.
 
 <details class="puzzle-games-disclosure">
   <summary>I also like pencil-and-paper puzzles such as <span>Sudoku</span>, Kakuro, Slitherlink, and Masyu.</summary>
