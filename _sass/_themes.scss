@@ -131,7 +131,8 @@ html[data-theme="dark"] .bibsearch-form-input:focus {
   border-color: var(--global-theme-color);
 }
 
-html[data-theme-setting="dark"] {
+html[data-theme-setting="dark"],
+html[data-theme-setting="system"][data-theme="dark"] {
   #light-toggle-system {
     display: none;
   }
@@ -150,7 +151,8 @@ html[data-theme-setting="dark"] {
   }
 }
 
-html[data-theme-setting="light"] {
+html[data-theme-setting="light"],
+html[data-theme-setting="system"][data-theme="light"] {
   #light-toggle-system {
     display: none;
   }

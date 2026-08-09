@@ -1,17 +1,20 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
-// Toggle through light and dark theme settings.
+const VALID_THEME_SETTINGS = new Set(["light", "dark", "system"]);
+
+// Toggle the visible interface between light and dark. Keep "system" as an
+// internal setting so integrations such as al-search remain compatible.
 let toggleThemeSetting = () => {
-  let themeSetting = determineThemeSetting();
-  if (themeSetting == "dark") {
-    setThemeSetting("light");
-  } else {
-    setThemeSetting("dark");
-  }
+  let theme = determineComputedTheme();
+  setThemeSetting(theme === "dark" ? "light" : "dark");
 };
 
 // Change the theme setting and apply the theme.
 let setThemeSetting = (themeSetting) => {
+  if (!VALID_THEME_SETTINGS.has(themeSetting)) {
+    themeSetting = "system";
+  }
+
   localStorage.setItem("theme", themeSetting);
 
   document.documentElement.setAttribute("data-theme-setting", themeSetting);
@@ -21,7 +24,7 @@ let setThemeSetting = (themeSetting) => {
 
 // Apply the computed dark or light theme to the website.
 let applyTheme = () => {
-  let theme = determineThemeSetting();
+  let theme = determineComputedTheme();
 
   transTheme();
   setHighlight(theme);
@@ -243,37 +246,32 @@ let setSearchTheme = (theme) => {
   }
 };
 
+const THEME_TRANSITION_MS = 240;
+const THEME_TRANSITION_CLEANUP_MS = THEME_TRANSITION_MS + 120;
+
 let transTheme = () => {
   document.documentElement.classList.add("transition");
   window.setTimeout(() => {
     document.documentElement.classList.remove("transition");
-  }, 260);
+  }, THEME_TRANSITION_CLEANUP_MS);
 };
 
-// Determine system theme setting.
-let determineSystemThemeSetting = () => {
-  const userPref = window.matchMedia;
-  if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-    systemThemeSetting = "dark";
-  } else {
-    systemThemeSetting = "light";
-  }
-  return systemThemeSetting;
-};
-
-// Determine the expected state of the theme, which can be "dark" or "light".
-// Default is to follow system theme setting.
+// Determine the saved setting. "system" remains part of the public contract
+// even though the navbar control itself intentionally exposes only two states.
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
-  if (themeSetting != "dark" && themeSetting != "light") {
-    themeSetting = determineSystemThemeSetting();
+  if (!VALID_THEME_SETTINGS.has(themeSetting)) {
+    themeSetting = "system";
   }
   return themeSetting;
 };
 
-// Determine the computed theme, which can be "dark" or "light".
+// Resolve the saved setting to the light/dark value consumed by plugins.
 let determineComputedTheme = () => {
   let themeSetting = determineThemeSetting();
+  if (themeSetting === "system") {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
   return themeSetting;
 };
 
@@ -284,18 +282,19 @@ let initTheme = () => {
 
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
-    const mode_toggle = document.getElementById("light-toggle");
+    const modeToggle = document.getElementById("light-toggle");
 
-    mode_toggle.addEventListener("click", function () {
-      toggleThemeSetting();
-    });
+    if (modeToggle) {
+      modeToggle.addEventListener("click", toggleThemeSetting);
+    }
   });
 
-  // Add event listener to the system theme setting change.
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
-    let systemThemeSetting = determineSystemThemeSetting();
-    setThemeSetting(systemThemeSetting);
-    applyTheme();
+  // Follow OS changes only while the saved setting is "system". Explicit user
+  // choices must not be overwritten by a later OS theme change.
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+    if (determineThemeSetting() === "system") {
+      applyTheme();
+    }
   });
 };
 
