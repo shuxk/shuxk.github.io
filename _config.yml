@@ -219,26 +219,16 @@ include: ["_pages"]
 exclude:
   - al-folio-upgrade-report.md
   - bin/
-  - CONTRIBUTING.md
-  - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
-  - docs/
-  - FAQ.md
   - Gemfile
   - Gemfile.lock
-  - INSTALL.md
   - LICENSE
-  - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
-  - readme_preview/
-  - gems/
-  - migrations/
   - vendor
 keep_files:
   - CNAME
