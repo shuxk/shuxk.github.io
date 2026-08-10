@@ -3,27 +3,25 @@ layout: default
 ---
 {% assign cv = site.data.cv.cv %}
 
-<div class="cv-modern">
+<div class="post cv-modern">
+  <header class="post-header cv-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    {% if page.cv_pdf %}
+      <a
+        href="{{ page.cv_pdf | prepend: '/' | relative_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cv-pdf-link"
+        aria-label="Download CV PDF"
+        title="Download CV PDF"
+      >
+        <i class="fa-solid fa-file-pdf"></i>
+      </a>
+    {% endif %}
+  </header>
+
   {% if cv %}
-    <section class="cv-hero">
-      {% if page.cv_pdf %}
-        <a
-          href="{{ page.cv_pdf | prepend: '/' | relative_url }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="cv-pdf-link"
-          aria-label="Download CV PDF"
-          title="Download CV PDF"
-        >
-          <i class="fa-solid fa-file-pdf"></i>
-        </a>
-      {% endif %}
-
-      <p class="cv-hero-subtitle">
-        <br>
-      </p>
-    </section>
-
     {% assign entries = cv.sections['Research Interests'] %}
     {% if entries %}
       <h3>Research Interests</h3>

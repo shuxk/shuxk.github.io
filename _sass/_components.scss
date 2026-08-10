@@ -405,33 +405,24 @@ ul.task-list input[type="checkbox"] {
   font-weight: 400;
 }
 
-.cv-modern .cv-hero {
-  position: relative;
-  margin-bottom: 1.4rem;
-  padding: 0.15rem 4.25rem 0.8rem 0;
-  border: 0;
-  border-bottom: 1px solid var(--global-divider-color);
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
+.cv-modern .cv-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.cv-modern .cv-header .post-title {
+  margin-bottom: 0;
 }
 
 .cv-modern .cv-pdf-link {
-  position: absolute;
-  top: -0.35rem;
-  right: 0;
+  flex: 0 0 auto;
   color: var(--global-theme-color);
   font-size: 2rem;
   line-height: 1;
   text-decoration: none;
-}
-
-.cv-modern .cv-hero-subtitle {
-  margin: 0 0 0.55rem;
-  color: var(--global-text-color-light);
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.45;
 }
 
 .cv-modern h3 {
@@ -505,12 +496,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 @media (max-width: 575px) {
-  .cv-modern .cv-hero {
-    padding-right: 3.5rem;
-  }
-
   .cv-modern .cv-pdf-link {
-    top: -0.2rem;
     font-size: 1.85rem;
   }
 

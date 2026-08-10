@@ -12,8 +12,8 @@
     }
   },
 
-  // The base Jekyll image runs bundle install separately.
-  "postCreateCommand": "sh /usr/local/post-create.sh && npm ci",
+  // The base Jekyll image already runs bundle install.
+  "postCreateCommand": "npm ci",
 
   "forwardPorts": [8080],
   "portsAttributes": {
