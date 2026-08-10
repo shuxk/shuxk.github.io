@@ -114,12 +114,12 @@ def get_scholar_citations() -> None:
             )
 
     if not citation_data["papers"]:
-        print(f"No valid publication data was collected. Keeping the existing citation data.")
+        print("No valid publication data was collected. Keeping the existing citation data.")
         sys.exit(1)
 
     # Compare new data with existing data
     if existing_data and existing_data.get("papers") == citation_data["papers"]:
-        print(f"No changes in citation data. Skipping file update.")
+        print("No changes in citation data. Skipping file update.")
         return
 
     try:
