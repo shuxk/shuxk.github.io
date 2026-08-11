@@ -16,8 +16,6 @@ I enjoy solving chess puzzles, Go problems, and <em>tsume-shogi</em>; my over-th
   <div class="sudoku">
     <div class="title">Arithmetic Thermometers (<a href="https://sudokupad.app/7qduimvfmr">SudokuPad</a>)</div>
 
-    <p></p>
-
     <div class="col-sm-8">
       {% include figure.liquid path="assets/img/arithmetic_thermometer.png" title="Arithmetic Thermometers" alt="Arithmetic Thermometers variant sudoku grid screenshot" width=1531 height=1531 class="img-fluid rounded z-depth-1" %}
     </div>
