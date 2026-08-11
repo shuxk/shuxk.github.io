@@ -357,7 +357,6 @@ ul.task-list input[type="checkbox"] {
   height: 20px;
   overflow: hidden;
   border-radius: 3px;
-  box-shadow: 0 0 0 1px transparent;
   color: var(--global-text-color);
   font-family: Verdana, Geneva, sans-serif;
   font-size: 11px;
@@ -365,7 +364,6 @@ ul.task-list input[type="checkbox"] {
   line-height: 20px;
   text-decoration: none;
   white-space: nowrap;
-  transition: box-shadow 150ms ease;
 }
 
 .publications ol.bibliography li .scholar-badge-label,
@@ -383,6 +381,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .publications ol.bibliography li .scholar-badge-label > span {
+  color: inherit;
   letter-spacing: -0.1px;
 }
 
@@ -403,8 +402,11 @@ ul.task-list input[type="checkbox"] {
 
 .publications ol.bibliography li .links a.scholar-badge-link:hover,
 .publications ol.bibliography li .links a.scholar-badge-link:focus-visible {
-  box-shadow: 0 0 0 1px var(--global-theme-color);
   text-decoration: none;
+}
+
+.publications ol.bibliography li .links a.scholar-badge-link:focus-visible {
+  box-shadow: 0 0 0 1px var(--global-theme-color);
 }
 
 .publications ol.bibliography li .links a.scholar-badge-link:hover .scholar-badge-label,
