@@ -13,8 +13,8 @@ layout: default
         target="_blank"
         rel="noopener noreferrer"
         class="cv-pdf-link"
-        aria-label="Download CV PDF"
-        title="Download CV PDF"
+        aria-label="Open CV PDF in a new tab"
+        title="Open CV PDF in a new tab"
       >
         <i class="fa-solid fa-file-pdf"></i>
       </a>
@@ -45,7 +45,7 @@ layout: default
             <div class="cv-entry-main">
               <div>
                 <div class="cv-entry-title">{{ entry.position }}</div>
-                <div class="cv-entry-details">{{ entry.institution | default: entry.name }}</div>
+                <div class="cv-entry-details">{{ entry.institution }}</div>
               </div>
               <div class="cv-entry-date">
                 {% assign start_year = entry.start_date | split: '-' | first %}
@@ -71,7 +71,7 @@ layout: default
             <div class="cv-entry-main">
               <div>
                 <div class="cv-entry-title">
-                  {{ entry.studyType | default: entry.degree }}
+                  {{ entry.degree }}
                   {% if entry.area %}
                     <span class="cv-entry-title-detail">in {{ entry.area }}</span>
                   {% endif %}
@@ -140,7 +140,7 @@ layout: default
       <div class="cv-entry-list">
         {% for entry in entries %}
           <article class="cv-entry">
-            <div class="cv-entry-title">{{ entry.role | default: entry.name | default: entry.label }}</div>
+            <div class="cv-entry-title">{{ entry.role }}</div>
             {% if entry.details %}
               <div class="cv-entry-details">{{ entry.details }}</div>
             {% endif %}

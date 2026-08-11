@@ -2,7 +2,6 @@
 layout: page
 permalink: /fun/
 title: Fun
-description:
 nav: true
 nav_order: 4
 ---
@@ -28,8 +27,6 @@ I enjoy solving chess puzzles, Go problems, and <em>tsume-shogi</em>; my over-th
     <p>On each thermometer, the digits from the bulb to the tip form a <b>strictly increasing arithmetic progression</b>. Each thermometer may have its own common difference.</p>
 
     <p>If thermometers share a cell, each thermometer is read independently in its own bulb-to-tip direction.</p>
-
-    <p><br></p>
 
     <details class="hidden-loop-disclosure">
       <summary><b>Bonus:</b> After solving the grid, can you find the <span>hidden loop</span>?</summary>
