@@ -395,7 +395,7 @@ ul.task-list input[type="checkbox"] {
 
 .publications ol.bibliography li .scholar-badge-count {
   justify-content: center;
-  padding: 0 5px;
+  padding-inline: 3px 4px;
   background: var(--scholar-badge-count-bg-color);
   color: #fff;
 }
