@@ -24,7 +24,7 @@ layout: default
   {% if cv %}
     {% assign entries = cv.sections['Research Interests'] %}
     {% if entries %}
-      <h3>Research Interests</h3>
+      <h2>Research Interests</h2>
       <div class="cv-entry-list">
         {% for entry in entries %}
           {% if entry.keywords %}
@@ -38,7 +38,7 @@ layout: default
 
     {% assign entries = cv.sections['Academic Positions'] %}
     {% if entries %}
-      <h3 id="academic-positions">Academic Positions</h3>
+      <h2 id="academic-positions">Academic Positions</h2>
       <div class="cv-entry-list">
         {% for entry in entries %}
           <article class="cv-entry">
@@ -64,7 +64,7 @@ layout: default
 
     {% assign entries = cv.sections.Education %}
     {% if entries %}
-      <h3 id="education">Education</h3>
+      <h2 id="education">Education</h2>
       <div class="cv-entry-list">
         {% for entry in entries %}
           <article class="cv-entry">
@@ -92,7 +92,7 @@ layout: default
 
     {% assign entries = cv.sections.Awards %}
     {% if entries %}
-      <h3 id="awards">Awards</h3>
+      <h2 id="awards">Awards</h2>
       <div class="cv-entry-list">
         {% for entry in entries %}
           <article class="cv-entry">
@@ -114,7 +114,7 @@ layout: default
 
     {% assign entries = cv.sections['Invited Talks'] %}
     {% if entries %}
-      <h3 id="invited-talks">Invited Talks</h3>
+      <h2 id="invited-talks">Invited Talks</h2>
       <div class="cv-entry-list">
         {% for entry in entries %}
           <article class="cv-entry">
@@ -136,7 +136,7 @@ layout: default
 
     {% assign entries = cv.sections['Academic Services'] %}
     {% if entries %}
-      <h3 id="academic-services">Academic Services</h3>
+      <h2 id="academic-services">Academic Services</h2>
       <div class="cv-entry-list">
         {% for entry in entries %}
           <article class="cv-entry">
@@ -151,7 +151,7 @@ layout: default
 
     {% assign entries = cv.sections['Additional Information'] %}
     {% if entries %}
-      <h3 id="additional-information">Additional Information</h3>
+      <h2 id="additional-information">Additional Information</h2>
       <div class="cv-entry-list">
         {% for entry in entries %}
           <article class="cv-entry">

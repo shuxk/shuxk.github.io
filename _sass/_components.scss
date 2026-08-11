@@ -269,6 +269,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .post-header .desc {
+  margin-bottom: 2rem;
   font-weight: 400;
 }
 
@@ -405,10 +406,14 @@ ul.task-list input[type="checkbox"] {
   text-decoration: none;
 }
 
-.cv h3 {
+.cv h2 {
   margin-top: 1.35rem;
   margin-bottom: 0.75rem;
   font-size: 1.65rem;
+}
+
+.cv > h2:first-of-type {
+  margin-top: 2rem;
 }
 
 .cv .cv-entry-list {
