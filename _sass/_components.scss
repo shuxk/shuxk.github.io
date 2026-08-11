@@ -350,6 +350,68 @@ ul.task-list input[type="checkbox"] {
   display: block;
 }
 
+.publications ol.bibliography li .links a.scholar-badge-link {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: stretch;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px transparent;
+  color: var(--global-text-color);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: box-shadow 150ms ease;
+}
+
+.publications ol.bibliography li .scholar-badge-label,
+.publications ol.bibliography li .scholar-badge-count {
+  display: inline-flex;
+  align-items: center;
+}
+
+.publications ol.bibliography li .scholar-badge-label {
+  gap: 3px;
+  padding: 0 5px;
+  background: transparent;
+  color: var(--global-text-color);
+  transition: color 150ms ease;
+}
+
+.publications ol.bibliography li .scholar-badge-label > span {
+  letter-spacing: -0.1px;
+}
+
+.publications ol.bibliography li .scholar-badge-icon {
+  flex: 0 0 auto;
+  width: 13px;
+  height: 13px;
+  fill: currentcolor;
+  color: var(--scholar-badge-icon-color);
+}
+
+.publications ol.bibliography li .scholar-badge-count {
+  justify-content: center;
+  padding: 0 5px;
+  background: var(--scholar-badge-count-bg-color);
+  color: #fff;
+}
+
+.publications ol.bibliography li .links a.scholar-badge-link:hover,
+.publications ol.bibliography li .links a.scholar-badge-link:focus-visible {
+  box-shadow: 0 0 0 1px var(--global-theme-color);
+  text-decoration: none;
+}
+
+.publications ol.bibliography li .links a.scholar-badge-link:hover .scholar-badge-label,
+.publications ol.bibliography li .links a.scholar-badge-link:focus-visible .scholar-badge-label {
+  color: var(--global-theme-color);
+}
+
 .publications ol.bibliography li .links a.btn {
   display: inline-flex;
   align-items: center;

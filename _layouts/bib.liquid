@@ -281,21 +281,18 @@
         <a
           class="scholar-badge-link"
           href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
-          aria-label="{{ citation_count }} Google Scholar citations"
+          aria-label="{{ citation_count }} Google Scholar citation{% unless citation_count == 1 %}s{% endunless %}"
           role="button"
         >
-          <img
-            class="scholar-badge-light"
-            src="https://img.shields.io/badge/scholar-{{ citation_count }}-4285F4?logo=googlescholar&labelColor=white&logoColor=4285F4"
-            alt=""
-            aria-hidden="true"
-          >
-          <img
-            class="scholar-badge-dark"
-            src="https://img.shields.io/badge/scholar-{{ citation_count }}-19667D?logo=googlescholar&labelColor=181C20&logoColor=2186A4"
-            alt=""
-            aria-hidden="true"
-          >
+          <span class="scholar-badge-label">
+            <svg class="scholar-badge-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="13" height="13">
+              <path
+                d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"
+              ></path>
+            </svg>
+            <span>scholar</span>
+          </span>
+          <span class="scholar-badge-count">{{ citation_count }}</span>
         </a>
       {% endif %}
     </div>

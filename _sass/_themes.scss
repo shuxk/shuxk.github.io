@@ -29,6 +29,8 @@
   --global-back-to-top-text-color: #{v.$white-color};
   --global-newsletter-bg-color: #{v.$white-color};
   --global-newsletter-text-color: #{v.$black-color};
+  --scholar-badge-count-bg-color: #0076df;
+  --scholar-badge-icon-color: #4285f4;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -98,6 +100,8 @@ html[data-theme="dark"] {
   --global-back-to-top-text-color: #{v.$black-color};
   --global-newsletter-bg-color: #{v.$grey-color-light};
   --global-newsletter-text-color: #{v.$grey-color-dark};
+  --scholar-badge-count-bg-color: #19667d;
+  --scholar-badge-icon-color: #2186a4;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #215d42;
@@ -217,27 +221,4 @@ html[data-theme-setting="system"][data-theme="light"] {
 
 #light-toggle:hover .fa-half-sun-moon::after {
   color: var(--global-theme-color);
-}
-
-// Cross-fade the Google Scholar badge with the rest of the theme.
-.publications ol.bibliography li .links a.scholar-badge-link {
-  position: relative;
-}
-
-.publications ol.bibliography li .links a.scholar-badge-link img.scholar-badge-dark {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-}
-
-html[data-theme="dark"] .publications ol.bibliography li .links a.scholar-badge-link img.scholar-badge-light {
-  opacity: 0;
-}
-
-html[data-theme="dark"] .publications ol.bibliography li .links a.scholar-badge-link img.scholar-badge-dark {
-  opacity: 1;
-}
-
-html.transition .publications ol.bibliography li .links a.scholar-badge-link img {
-  transition: opacity 240ms ease !important;
 }
