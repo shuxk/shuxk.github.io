@@ -20,7 +20,7 @@ I enjoy solving chess puzzles, Go problems, and <em>tsume-shogi</em>; my over-th
     <p></p>
 
     <div class="col-sm-8">
-      {% include figure.liquid path="assets/img/arithmetic_thermometer.png" title="Arithmetic Thermometers" alt="Arithmetic Thermometers variant sudoku grid screenshot" class="img-fluid rounded z-depth-1" %}
+      {% include figure.liquid path="assets/img/arithmetic_thermometer.png" title="Arithmetic Thermometers" alt="Arithmetic Thermometers variant sudoku grid screenshot" width=1531 height=1531 class="img-fluid rounded z-depth-1" %}
     </div>
 
     <p>Normal sudoku rules apply.</p>
@@ -62,6 +62,6 @@ I play Minesweeper casually. My Expert PB is 84 seconds on a board with 3BV=175.
 
 <div class="row">
     <div class="col-sm-8">
-        {% include figure.liquid path="assets/img/minesweeper.png" title="minesweeper" alt="Minesweeper 84-second win screenshot" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/minesweeper.png" title="minesweeper" alt="Minesweeper 84-second win screenshot" width=1008 height=642 loading="eager" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
