@@ -31,6 +31,11 @@ ul.task-list input[type="checkbox"] {
   opacity: 1;
 }
 
+.navbar .navbar-brand.title,
+.navbar .nav-link {
+  font-weight: 400;
+}
+
 // Caption
 
 .caption {
@@ -177,7 +182,7 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Social (bottom)
+// Social
 
 .social {
   text-align: center;
@@ -674,11 +679,12 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Compact non-fixed footer
+// Footer
 footer.sticky-bottom {
   padding-top: 0.5rem;
   padding-bottom: 0.25rem;
   border-top: 0;
   font-size: 0.8rem;
   line-height: 1.5;
+  font-weight: 400;
 }
