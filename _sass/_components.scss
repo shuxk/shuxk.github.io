@@ -681,8 +681,21 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Scrollbar
+
+html {
+  scrollbar-gutter: stable;
+}
+
 // Footer
+body.sticky-bottom-footer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 footer.sticky-bottom {
+  margin-top: auto;
   padding-top: 0.5rem;
   padding-bottom: 0.25rem;
   border-top: 0;
