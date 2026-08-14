@@ -25,6 +25,7 @@ I enjoy solving chess puzzles, Go problems, and <em>tsume-shogi</em>; my over-th
     <p>Digits along each thermometer increase in <b>equal steps</b> from bulb to tip. Different thermometers may have different step sizes.</p>
 
     <p>Whenever two thermometers share a cell, <b>exactly one</b> of the two has step size 1.</p>
+
   </div>
 </details>
 
