@@ -31,6 +31,11 @@ ul.task-list input[type="checkbox"] {
   opacity: 1;
 }
 
+.navbar .navbar-brand.title,
+.navbar .nav-link {
+  font-weight: 400;
+}
+
 // Caption
 
 .caption {
@@ -177,7 +182,7 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Social (bottom)
+// Social
 
 .social {
   text-align: center;
@@ -359,7 +364,7 @@ ul.task-list input[type="checkbox"] {
   border-radius: 3px;
   color: var(--global-text-color);
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
@@ -394,8 +399,10 @@ ul.task-list input[type="checkbox"] {
 }
 
 .publications ol.bibliography li .scholar-badge-count {
+  min-width: 20px;
+  box-sizing: border-box;
   justify-content: center;
-  padding: 0 5px;
+  padding-inline: 3px 4px;
   background: var(--scholar-badge-count-bg-color);
   color: #fff;
 }
@@ -666,11 +673,25 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Compact non-fixed footer
+// Scrollbar
+
+html {
+  scrollbar-gutter: stable;
+}
+
+// Footer
+body.sticky-bottom-footer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 footer.sticky-bottom {
+  margin-top: auto;
   padding-top: 0.5rem;
   padding-bottom: 0.25rem;
   border-top: 0;
   font-size: 0.8rem;
   line-height: 1.5;
+  font-weight: 400;
 }
