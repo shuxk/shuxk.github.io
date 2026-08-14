@@ -11,29 +11,20 @@ I enjoy solving chess puzzles, Go problems, and <em>tsume-shogi</em>; my over-th
 <details class="puzzle-games-disclosure">
   <summary>I also like pencil-and-paper puzzles such as <span>Sudoku</span>, Kakuro, Slitherlink, and Masyu.</summary>
 
-  <p>Below is my first original Sudoku variant puzzle. I'd love to hear your feedback.</p>
+  <p>Below is a Sudoku variant puzzle I set. I'd love to hear your feedback.</p>
 
   <div class="sudoku">
-    <div class="title">Arithmetic Thermometers (<a href="https://sudokupad.app/7qduimvfmr">SudokuPad</a>)</div>
+    <div class="title">One Small Step (<a href="https://sudokupad.app/w2rrlcv990">SudokuPad</a>)</div>
 
     <div class="col-sm-8">
-      {% include figure.liquid path="assets/img/arithmetic_thermometer.png" title="Arithmetic Thermometers" alt="Arithmetic Thermometers variant sudoku grid screenshot" width=1531 height=1531 class="img-fluid rounded z-depth-1" %}
+      {% include figure.liquid path="assets/img/one_small_step.png" title="One Small Step" alt="One Small Step variant sudoku grid" width=1531 height=1531 class="img-fluid rounded z-depth-1" %}
     </div>
 
     <p>Normal sudoku rules apply.</p>
 
-    <p>On each thermometer, the digits from the bulb to the tip form a <b>strictly increasing arithmetic progression</b>. Each thermometer may have its own common difference.</p>
+    <p>Digits along each thermometer increase in <b>equal steps</b> from bulb to tip. Different thermometers may have different step sizes.</p>
 
-    <p>If thermometers share a cell, each thermometer is read independently in its own bulb-to-tip direction.</p>
-
-    <details class="hidden-loop-disclosure">
-      <summary><b>Bonus:</b> After solving the grid, can you find the <span>hidden loop</span>?</summary>
-      <div class="easter-egg-content">
-         The thermometers connect tip-to-bulb to form a single 80-cell closed loop around the central cell. Along the loop, every tip, bulb, and non-thermometer cell is a turn; the loop may not pass straight through any of these cells.
-      </div>
-
-    </details>
-
+    <p>Whenever two thermometers share a cell, <b>exactly one</b> of the two has step size 1.</p>
   </div>
 </details>
 
