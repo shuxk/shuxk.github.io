@@ -1,0 +1,28 @@
+# Add new puzzles by appending entries. Titles must be unique after slugification.
+
+- title: One Small Step
+  sudokupad_url: https://sudokupad.app/w2rrlcv990
+  image:
+    path: assets/img/one_small_step.png
+  rules:
+    - Normal sudoku rules apply.
+    - >-
+      Digits along each thermometer increase in **equal steps** from bulb to tip.
+      Different thermometers may have different step sizes.
+    - >-
+      Whenever two thermometers share a cell, **exactly one** of the two has step size 1.
+
+- title: Waterline
+  sudokupad_url: https://sudokupad.app/lhjrrk91ef
+  image:
+    path: assets/img/waterline.png
+  rules:
+    - Normal sudoku rules apply.
+    - >-
+      **Waterline Loop:** Draw a single closed loop through cell centres, moving orthogonally.
+      It must visit every non-5 cell exactly once and must not visit any cell containing a 5.
+    - >-
+      Along each maximal straight segment of the loop, including the turning cells at both ends,
+      the digits must strictly increase or strictly decrease from one end to the other. At each turn,
+      the digit must be either a **valley** (1–4 and lower than both adjacent digits on the loop)
+      or a **peak** (6–9 and higher than both adjacent digits on the loop).
