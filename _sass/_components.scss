@@ -627,16 +627,35 @@ ul.task-list input[type="checkbox"] {
   line-height: 1.35;
 }
 
+.sudoku-selector {
+  margin-bottom: 0.75rem;
+}
+
+.sudoku-toggle {
+  width: 100%;
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.sudoku-toggle[aria-expanded="true"] {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.07);
+}
+
+.sudoku-toggle:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+}
+
 .steam-game-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 0.55rem;
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
-}
-
-.sudoku-selector {
-  margin-bottom: 0.75rem;
 }
 
 .steam-game {
@@ -661,38 +680,6 @@ ul.task-list input[type="checkbox"] {
   font-size: 0.92rem;
   font-weight: 500;
   line-height: 1.25;
-}
-
-.sudoku-toggle {
-  width: 100%;
-  appearance: none;
-  cursor: pointer;
-  font: inherit;
-  text-align: left;
-}
-
-.sudoku-toggle::after {
-  flex: 0 0 auto;
-  margin-left: auto;
-  color: var(--global-theme-color);
-  content: "+";
-  font-size: 1.1rem;
-  line-height: 1;
-}
-
-.sudoku-toggle[aria-expanded="true"] {
-  border-color: var(--global-theme-color);
-  color: var(--global-theme-color);
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.07);
-}
-
-.sudoku-toggle[aria-expanded="true"]::after {
-  content: "−";
-}
-
-.sudoku-toggle:focus-visible {
-  outline: 2px solid var(--global-theme-color);
-  outline-offset: 2px;
 }
 
 .steam-game:hover {

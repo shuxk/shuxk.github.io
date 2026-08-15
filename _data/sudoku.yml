@@ -24,5 +24,5 @@
     - >-
       Along each maximal straight segment of the loop, including the turning cells at both ends,
       the digits must strictly increase or strictly decrease from one end to the other. At each turn,
-      the digit must be either a **valley** (1–4 and lower than both adjacent digits on the loop)
-      or a **peak** (6–9 and higher than both adjacent digits on the loop).
+      the digit must be either a **valley** (1-4 and lower than both adjacent digits on the loop)
+      or a **peak** (6-9 and higher than both adjacent digits on the loop).
