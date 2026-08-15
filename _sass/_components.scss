@@ -627,10 +627,6 @@ ul.task-list input[type="checkbox"] {
   line-height: 1.35;
 }
 
-.sudoku-selector {
-  margin-bottom: 0.75rem;
-}
-
 .sudoku-toggle {
   width: 100%;
   appearance: none;
@@ -656,6 +652,10 @@ ul.task-list input[type="checkbox"] {
   gap: 0.55rem;
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
+}
+
+.steam-game-grid .sudoku-selector {
+  margin-bottom: 0.25em;
 }
 
 .steam-game {
