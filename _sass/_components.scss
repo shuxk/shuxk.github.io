@@ -646,16 +646,16 @@ ul.task-list input[type="checkbox"] {
   outline-offset: 2px;
 }
 
+.sudoku-selector:has(.sudoku-toggle[aria-expanded="true"]) {
+  margin-bottom: 0.25em;
+}
+
 .steam-game-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 0.55rem;
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
-}
-
-.steam-game-grid .sudoku-selector {
-  margin-bottom: 0.25em;
 }
 
 .steam-game {
