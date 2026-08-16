@@ -615,11 +615,6 @@ ul.task-list input[type="checkbox"] {
   background: var(--global-card-bg-color);
 }
 
-.sudoku:hover {
-  border-color: var(--global-theme-color);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
-}
-
 .sudoku .title {
   display: block;
   margin-bottom: 1rem;
