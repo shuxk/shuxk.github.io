@@ -43,7 +43,7 @@ I enjoy solving chess puzzles, Go problems, and <em>tsume-shogi</em>; my over-th
           <div class="title">
             {{ puzzle.title }} (<a href="https://sudokupad.app/{{ puzzle.sudokupad_id }}">SudokuPad</a>){% if puzzle.ctc_url %}
               (<a href="{{ puzzle.ctc_url }}">CTC</a>){% endif %}{% if puzzle.lmd_id %}
-              (<a href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?chlang=en&amp;id={{ puzzle.lmd_id }}">LMD</a>){% endif %}
+              (<a href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id={{ puzzle.lmd_id }}">LMD</a>){% endif %}
           </div>
 
           {% assign image_static_path = puzzle.image.path | prepend: '/' %}
