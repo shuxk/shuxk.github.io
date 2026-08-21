@@ -622,6 +622,11 @@ ul.task-list input[type="checkbox"] {
   line-height: 1.35;
 }
 
+.sudoku > :last-child,
+.sudoku > :last-child pre {
+  margin-bottom: 0;
+}
+
 .sudoku-toggle {
   width: 100%;
   appearance: none;

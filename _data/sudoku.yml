@@ -1,7 +1,5 @@
-# Add new puzzles by appending entries. Titles must be unique after slugification.
-
 - title: One Small Step
-  sudokupad_url: https://sudokupad.app/w2rrlcv990
+  sudokupad_id: w2rrlcv990
   image:
     path: assets/img/one_small_step.png
   rules:
@@ -13,7 +11,8 @@
       Whenever two thermometers share a cell, **exactly one** of the two has step size 1.
 
 - title: Waterline
-  sudokupad_url: https://sudokupad.app/lhjrrk91ef
+  sudokupad_id: lhjrrk91ef
+  lmd_id: 000UE2
   image:
     path: assets/img/waterline.png
   rules:
@@ -26,3 +25,22 @@
       the digits must strictly increase or strictly decrease from one end to the other. At each turn,
       the digit must be either a **valley** (1-4 and lower than both adjacent digits on the loop)
       or a **peak** (6-9 and higher than both adjacent digits on the loop).
+
+- title: Out of Touch
+  sudokupad_id: r30boqpc7j
+  image:
+    path: assets/img/out_of_touch.png
+  rules:
+    - Normal Sudoku rules apply.
+    - >-
+      Draw a single closed loop that moves orthogonally through cell centers. It must leave exactly
+      nine cells unvisited and visit every other cell exactly once.
+    - >-
+      The nine unvisited cells contain 1–9 once each, with no two in the same row, column, or box.
+      A cell is unvisited if and only if its digit equals its position within its box.
+    - >-
+      The loop can be divided into nine consecutive 8-cell sections, each containing eight different
+      digits. The unvisited cell containing a section’s missing digit may not share an edge with any
+      cell in that section.
+    - >-
+      Positions within each box are numbered 1–9 from left to right, top to bottom.
