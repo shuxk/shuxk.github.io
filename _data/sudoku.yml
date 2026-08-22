@@ -29,6 +29,7 @@
 
 - title: Out of Touch
   sudokupad_id: 8yy1xpblxs
+  lmd_id: 000UHW
   image:
     path: assets/img/out_of_touch.png
   rules:
