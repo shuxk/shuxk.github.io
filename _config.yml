@@ -272,12 +272,19 @@ plugins:
   - al_marimo
   - al_rtl
 
-# Sitemap settings
+# Sitemap and indexing settings
 defaults:
   - scope:
       path: "assets"
     values:
       sitemap: false
+
+  - scope:
+      path: "_pages/fun.md"
+      type: "pages"
+    values:
+      sitemap: false
+      robots: "noindex, nofollow, noimageindex"
 
 sass:
   style: compressed
