@@ -28,7 +28,7 @@
       or a **peak** (6-9 and higher than both adjacent digits on the loop).
 
 - title: Out of Touch
-  sudokupad_id: r30boqpc7j
+  sudokupad_id: 8yy1xpblxs
   image:
     path: assets/img/out_of_touch.png
   rules:
@@ -43,5 +43,3 @@
       The loop can be divided into nine consecutive 8-cell sections, each containing eight different
       digits. The unvisited cell containing a section’s missing digit may not share an edge with any
       cell in that section.
-    - >-
-      Positions within each box are numbered 1–9 from left to right, top to bottom.
