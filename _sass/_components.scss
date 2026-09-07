@@ -1,0 +1,720 @@
+/*******************************************************************************
+ * Reusable component styles: Cards, captions, profiles, etc.
+ ******************************************************************************/
+
+// Checklist
+
+ul.task-list {
+  list-style-type: none; /* Remove bullets from all levels */
+}
+
+ul.task-list > li ul {
+  /* Nested lists within .task-list */
+  padding-inline-start: 1.5rem;
+}
+
+ul.task-list input[type="checkbox"] {
+  margin: 0.275rem 0.5rem 0.5rem -1rem;
+  vertical-align: middle;
+}
+
+// Math
+
+.equation {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+// Navbar
+
+.navbar {
+  opacity: 1;
+}
+
+.navbar .navbar-brand.title,
+.navbar .nav-link {
+  font-weight: 400;
+}
+
+// Caption
+
+.caption {
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+// Card
+
+.card {
+  background-color: var(--global-card-bg-color);
+
+  .card-img {
+    width: 100%;
+    padding-top: 1.25rem;
+  }
+
+  .card-title {
+    color: var(--global-text-color);
+  }
+
+  .card-body {
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  }
+}
+
+.hoverable {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.hoverable:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.12),
+    0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hoverable {
+    transition: none;
+  }
+
+  .hoverable:hover {
+    transform: none;
+  }
+}
+
+// Profile
+
+.profile {
+  width: 100%;
+
+  .more-info {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: monospace;
+
+    p {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+}
+
+.profile.float-right {
+  margin-left: 1rem;
+}
+
+.profile.float-left {
+  margin-right: 1rem;
+}
+
+@media (min-width: 576px) {
+  .profile {
+    width: 30%;
+
+    .address {
+      p {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .post article > .profile.float-right,
+  .post article > .profile.float-left {
+    float: none !important;
+    display: block;
+    width: 65%;
+    max-width: 230px;
+    margin: 0 auto 1rem !important;
+  }
+}
+
+// Projects
+
+.projects {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      .card-title {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .card {
+    img {
+      width: 100%;
+    }
+  }
+
+  .col {
+    padding-bottom: 1rem;
+  }
+
+  .grid-sizer,
+  .grid-item {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  h2.category {
+    color: var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+}
+
+// Repositories
+
+@media (min-width: 768px) {
+  .repo {
+    max-width: 50%;
+  }
+}
+
+// Social
+
+.social {
+  text-align: center;
+
+  .contact-icons {
+    font-size: 2rem;
+
+    a {
+      img {
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 0.5rem;
+
+        image {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+
+      i::before {
+        color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+
+  .contact-note {
+    font-size: 0.8rem;
+  }
+}
+
+.wechat-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wechat-modal > img {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 33%;
+  max-width: 400px;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 400px) {
+  .wechat-modal > img {
+    width: 100%;
+  }
+}
+
+// Distill
+
+.distill {
+  a:hover {
+    border-bottom-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+// diff2html
+
+.d2h-diff-table {
+  position: relative;
+}
+
+// page typography
+
+.post article {
+  font-weight: 400;
+}
+
+.post-header .desc {
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.post article strong,
+.post article b,
+.cv strong,
+.cv b {
+  font-weight: 500;
+}
+
+// bibliography
+
+.selected-publications-heading + .publications {
+  margin-top: 0;
+}
+
+.publications ol.bibliography {
+  list-style: none;
+  padding-left: 0;
+}
+
+.publications ol.bibliography > li {
+  margin-bottom: 0.25em;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+}
+
+.publications ol.bibliography > li:hover {
+  border-color: var(--global-theme-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.publications ol.bibliography > li > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.publications ol.bibliography > li > .row > .col-sm-10 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.publications ol.bibliography li .author a {
+  border-bottom: 0;
+}
+
+.publications ol.bibliography li .author a:hover {
+  border-bottom: 0;
+  text-decoration: underline;
+}
+
+.publications ol.bibliography > li .title {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.publications ol.bibliography li .links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.publications ol.bibliography li .links a img {
+  display: block;
+}
+
+.publications ol.bibliography li .links a.scholar-badge-link {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: stretch;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 3px;
+  color: var(--global-text-color);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.publications ol.bibliography li .scholar-badge-label,
+.publications ol.bibliography li .scholar-badge-count {
+  display: inline-flex;
+  align-items: center;
+}
+
+.publications ol.bibliography li .scholar-badge-label {
+  gap: 3px;
+  padding: 0 5px;
+  background: transparent;
+  color: var(--global-text-color);
+  transition: color 150ms ease;
+}
+
+.publications ol.bibliography li .scholar-badge-label > span {
+  color: inherit;
+  letter-spacing: -0.1px;
+}
+
+.publications ol.bibliography li .scholar-badge-icon {
+  flex: 0 0 auto;
+  width: 13px;
+  height: 13px;
+  fill: currentcolor;
+  color: var(--scholar-badge-icon-color);
+}
+
+.publications ol.bibliography li .scholar-badge-count {
+  min-width: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  padding-inline: 3px 4px;
+  background: var(--scholar-badge-count-bg-color);
+  color: #fff;
+}
+
+.publications ol.bibliography li .links a.scholar-badge-link:hover,
+.publications ol.bibliography li .links a.scholar-badge-link:focus-visible {
+  text-decoration: none;
+}
+
+.publications ol.bibliography li .links a.scholar-badge-link:focus-visible {
+  box-shadow: 0 0 0 1px var(--global-theme-color);
+}
+
+.publications ol.bibliography li .links a.scholar-badge-link:hover .scholar-badge-label,
+.publications ol.bibliography li .links a.scholar-badge-link:focus-visible .scholar-badge-label {
+  color: var(--global-theme-color);
+}
+
+.publications ol.bibliography li .links a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0.18rem 0.52rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--global-text-color);
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.35;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.publications ol.bibliography li .links a.btn:hover,
+.publications ol.bibliography li .links a.btn:focus-visible {
+  border-color: var(--global-theme-color);
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.publications h2.bibliography {
+  text-align: left;
+  color: var(--global-text-color-light);
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0.85rem;
+  margin-bottom: 0.45rem;
+}
+
+// CV
+
+.cv {
+  font-weight: 400;
+}
+
+.cv .cv-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.cv .cv-header .post-title {
+  margin-bottom: 0;
+}
+
+.cv .cv-pdf-link {
+  flex: 0 0 auto;
+  color: var(--global-theme-color);
+  font-size: 2rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.cv h2 {
+  margin-top: 1.35rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.65rem;
+}
+
+.cv > h2:first-of-type {
+  margin-top: 2rem;
+}
+
+.cv .cv-entry-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.cv .cv-entry {
+  padding: 0.45rem 0;
+  border-bottom: 0;
+}
+
+.cv .cv-entry-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1rem;
+  align-items: baseline;
+}
+
+.cv .cv-entry-main > :first-child {
+  min-width: 0;
+}
+
+.cv .cv-entry-title {
+  color: var(--global-text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.cv .cv-entry-title-detail {
+  font-weight: 400;
+}
+
+.cv .cv-entry-details {
+  margin-top: 0.08rem;
+  color: var(--global-text-color);
+  line-height: 1.35;
+}
+
+.cv .cv-entry-date {
+  flex: 0 0 auto;
+  color: var(--global-text-color-light);
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.35;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cv .cv-entry-list-compact {
+  display: grid;
+  gap: 0.08rem;
+}
+
+.cv .cv-entry-subrow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1rem;
+  align-items: baseline;
+}
+
+.cv .cv-entry-subrow > :first-child {
+  min-width: 0;
+}
+
+@media (max-width: 575px) {
+  .cv .cv-pdf-link {
+    font-size: 1.85rem;
+  }
+
+  .cv .cv-entry-main {
+    display: block;
+  }
+
+  .cv .cv-entry-date {
+    margin-top: 0.2rem;
+    text-align: left;
+  }
+}
+
+// Fun
+
+.puzzle-games-disclosure {
+  margin: 0 0 1em;
+}
+
+.puzzle-games-disclosure summary {
+  display: inline;
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+}
+
+.puzzle-games-disclosure summary::marker {
+  display: none;
+  content: "";
+}
+
+.puzzle-games-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
+.puzzle-games-disclosure summary span {
+  color: var(--global-theme-color);
+  border-bottom: 1px dashed var(--global-theme-color);
+}
+
+.puzzle-games-disclosure summary:hover span {
+  border-bottom-style: solid;
+}
+
+.puzzle-games-disclosure[open] > summary + * {
+  margin-top: 1em;
+}
+
+.sudoku {
+  margin-bottom: 0.25em;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+}
+
+.sudoku .title {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.sudoku > :last-child,
+.sudoku > :last-child pre {
+  margin-bottom: 0;
+}
+
+.sudoku-toggle {
+  width: 100%;
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.sudoku-toggle[aria-expanded="true"] {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.07);
+}
+
+.sudoku-toggle:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+}
+
+.sudoku-selector:has(.sudoku-toggle[aria-expanded="true"]) {
+  margin-bottom: 0.25em;
+}
+
+.steam-game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 0.55rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.steam-game {
+  display: flex;
+  align-items: center;
+  min-height: 3.25rem;
+  padding: 0.62rem 0.72rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition:
+    border-color 0.16s ease,
+    box-shadow 0.16s ease,
+    transform 0.16s ease;
+}
+
+.steam-game span {
+  display: block;
+  color: inherit;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.steam-game:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+  text-decoration: none;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.07);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 575px) {
+  .steam-game-grid {
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  }
+}
+
+// Scrollbar
+
+html {
+  scrollbar-gutter: stable;
+}
+
+// Footer
+body.sticky-bottom-footer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer.sticky-bottom {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-top: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+}

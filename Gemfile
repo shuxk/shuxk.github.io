@@ -9,9 +9,7 @@ group :jekyll_plugins do
     gem 'jekyll-cache-bust'
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'
-    gem 'jekyll-get-json'
     gem 'jekyll-imagemagick'
-    gem 'jekyll-jupyter-notebook'
     gem 'jekyll-link-attributes'
     gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
@@ -42,7 +40,6 @@ end
 group :al_folio_plugins do
     gem 'al_folio_core', '= 1.0.15'
     gem 'al_icons', '= 1.0.0'
-    gem 'al_folio_cv', '= 1.0.2'
     gem 'al_folio_distill', '= 1.0.3'
     gem 'al_folio_upgrade', '= 1.0.3'
     gem 'al_folio_bootstrap_compat', '= 1.0.0'
@@ -57,7 +54,6 @@ group :al_folio_plugins do
     gem 'al_math', '= 1.0.2'
     gem 'al_comments', '= 1.0.0'
     gem 'al_newsletter', '= 1.0.0'
-
     gem 'al_email_protect', '= 1.0.1'
     gem 'al_marimo', '= 1.0.0'
     gem 'al_rtl', '= 1.0.0'

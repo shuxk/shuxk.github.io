@@ -1,0 +1,6 @@
+---
+date: 2025-04-14 23:55:00 +0800
+inline: true
+---
+
+Our paper <a href="https://arxiv.org/abs/2504.13430"><b>The Long Arm of Nashian Allocation in Online p-Mean Welfare Maximization</b></a> (joint work with Zhiyi Huang, Chui Shan Lee, and Zhaozi Wang) was accepted to **ICALP 2025**.
