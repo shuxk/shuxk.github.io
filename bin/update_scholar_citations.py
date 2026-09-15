@@ -4,6 +4,23 @@ import os
 import sys
 import yaml
 from datetime import datetime
+from importlib.metadata import distribution
+from pathlib import Path
+
+# Defer scholarly's legacy BibTeX export import; citation updates do not use it.
+_scholarly_path = Path(distribution("scholarly").locate_file("scholarly/publication_parser.py"))
+_scholarly_source = _scholarly_path.read_text(encoding="utf-8")
+_legacy_import = "\nfrom bibtexparser.bibdatabase import BibDatabase\n"
+_bibtex_use = "        a = BibDatabase()\n"
+if _legacy_import in _scholarly_source:
+    if _scholarly_source.count(_legacy_import) != 1 or _scholarly_source.count(_bibtex_use) != 1:
+        raise RuntimeError("Unexpected scholarly source; check the compatibility fix.")
+    _scholarly_source = _scholarly_source.replace(_legacy_import, "\n", 1)
+    _scholarly_source = _scholarly_source.replace(
+        _bibtex_use, "        from bibtexparser.bibdatabase import BibDatabase\n" + _bibtex_use, 1
+    )
+    _scholarly_path.write_text(_scholarly_source, encoding="utf-8")
+
 from scholarly import scholarly
 
 
