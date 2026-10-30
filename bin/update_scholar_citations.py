@@ -116,7 +116,12 @@ def get_scholar_citations() -> None:
 
             title = pub.get("bib", {}).get("title", "Unknown Title")
             year = pub.get("bib", {}).get("pub_year", "Unknown Year")
-            citations = pub.get("num_citations", 0)
+            citations = pub.get("num_citations")
+            if citations is None:
+                print(
+                    f"Warning: No citation count for '{title}' ({pub_id}). Keeping the existing value."
+                )
+                continue
 
             print(f"Found: {title} ({year}) - Citations: {citations}")
 
@@ -135,6 +140,11 @@ def get_scholar_citations() -> None:
         sys.exit(1)
 
     # Compare new data with existing data
+    citation_data["papers"] = {
+        **(existing_data.get("papers") or {}),
+        **citation_data["papers"],
+    }
+
     if existing_data and existing_data.get("papers") == citation_data["papers"]:
         print("No changes in citation data. Skipping file update.")
         return

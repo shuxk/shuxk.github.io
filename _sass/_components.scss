@@ -343,6 +343,10 @@ ul.task-list input[type="checkbox"] {
   line-height: 1.35;
 }
 
+.publications ol.bibliography > li .publication-venue {
+  font-weight: 700;
+}
+
 .publications ol.bibliography li .links {
   display: flex;
   flex-wrap: wrap;
